@@ -1,0 +1,15 @@
+// all mixin variale here !!
+$primary_base_color: #000;
+$color_primary: #000;
+$color_secondary: #fff;
+$custom_panel_border: #ddd;
+$color_footer_H5: #f75a47;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// .box { @include border-radius(10px); }

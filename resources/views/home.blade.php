@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="eng">
 	<head>
-		<title>Laravel Learning With Amtek.Lab</title>
+		<title>Dimas Recovery</title>
 		<meta name="csrf-token" content="{{csrf_token()}}">
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
@@ -16,7 +16,7 @@
 			<div class="col-lg-12">
 				<nav class="navbar navbar-default" id="navi-subcustom">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="#">Learning Laravel</a>
+						<a class="navbar-brand" href="#">Dimas Recovery</a>
 					</div>
 					<ul class="nav navbar-nav" id="ul-subcustom">
 						<li class="active" id="custom-active"><a href="#">Home</a></li>
