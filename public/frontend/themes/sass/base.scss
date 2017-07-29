@@ -1,29 +1,33 @@
 @import 'reset';
-@import 'variables';
-@import '_partials';
+@import 'mixins';
+@import 'partials';
 @import 'color';
+
+$primary_base_color: #000;
+$color_primary: #000;
+$color_secondary: #fff;
+$custom_panel_border: #ddd;
+$color_footer: #f75a47;
 
 body#app-style-body {
   background-color: $primary_base_color;
-
-  #ul {
-    color: $color_primary;
-    font-size: 14px;
-
-    .li {
-      color: $color_primary;
-      margin-left: 10px;
-      text-algin: center;
+    #ul {
+        color: $color_primary;
+        font-size: 14px;
+      .li {
+          color: $color_primary;
+          margin-left: 10px;
+          text-algin: center;
+      }
     }
-  }
 }
 
 h5 {
-  color: $color_footer_H5;
+  color: $color_footer;
 }
 
 h4 {
-  color: $color_footer_H5;
+  color: $color_footer;
 }
 
 .navbar-right {
@@ -34,7 +38,7 @@ h4 {
   #custom-active {
     a {
       background-color: #f75a47;
-      color: $color_secondary !important;
+      color: $color_secondary;
     }
   }
 }
@@ -46,6 +50,7 @@ h4 {
 .custom-panel {
   padding: 2em;
   border: 1px solid $custom_panel_border;
+  @include border-radius(10px);
 }
 
 .thead-inverse {
