@@ -1,0 +1,68 @@
+@import 'reset';
+@import 'variables';
+@import '_partials';
+@import 'color';
+
+body#app-style-body {
+  background-color: $primary_base_color;
+
+  #ul {
+    color: $color_primary;
+    font-size: 14px;
+
+    .li {
+      color: $color_primary;
+      margin-left: 10px;
+      text-algin: center;
+    }
+  }
+}
+
+h5 {
+  color: $color_footer_H5;
+}
+
+h4 {
+  color: $color_footer_H5;
+}
+
+.navbar-right {
+  margin-right: 40px;
+}
+
+#ul-subcustom {
+  #custom-active {
+    a {
+      background-color: #f75a47;
+      color: $color_secondary !important;
+    }
+  }
+}
+
+.navbar-login {
+  padding: 7px;
+}
+
+.custom-panel {
+  padding: 2em;
+  border: 1px solid $custom_panel_border;
+}
+
+.thead-inverse {
+  background-color: $color_primary;
+  color: $color_secondary;
+}
+
+.footer-areas {
+  background-color: $color_primary;
+  height: 300px;
+  display: inline-block;
+  color: $color_secondary;
+  position: absolute;
+
+  .footer-menu {
+    padding: 45px;
+    font-size: 14px;
+    clear: both;
+  }
+}
