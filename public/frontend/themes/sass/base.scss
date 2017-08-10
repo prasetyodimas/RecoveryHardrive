@@ -1,4 +1,4 @@
-@import 'reset';
+@import '_reset';
 @import 'mixins';
 @import 'partials';
 @import 'color';
@@ -56,6 +56,7 @@ h4 {
 .thead-inverse {
   background-color: $color_primary;
   color: $color_secondary;
+  @include border-radius(5px);
 }
 
 .footer-areas {
