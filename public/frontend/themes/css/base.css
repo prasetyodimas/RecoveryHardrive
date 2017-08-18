@@ -1,74 +1,151 @@
-html,
-body,
-ul,
-ol {
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.topnav {
+  font-size: 14px;
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.intro-header {
+  padding-top: 50px;
+  /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(img/banner-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.intro-message > h1 {
   margin: 0;
-  padding: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 5em;
 }
 
-body#app-style-body {
-  background-color: #000;
+.intro-divider {
+  width: 400px;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-body#app-style-body #ul {
-  color: #000;
+
+.intro-message > h3 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+  .intro-message > h1 {
+    font-size: 3em;
+  }
+
+  ul.intro-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.intro-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+
+  .intro-divider {
+    width: 100%;
+  }
+}
+.network-name {
+  text-transform: uppercase;
   font-size: 14px;
-}
-body#app-style-body #ul .li {
-  color: #000;
-  margin-left: 10px;
-  text-algin: center;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-h5 {
-  color: #f75a47;
+.content-section-a {
+  padding: 50px 0;
+  background-color: #f8f8f8;
 }
 
-h4 {
-  color: #f75a47;
+.content-section-b {
+  padding: 50px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
 }
 
-.navbar-right {
-  margin-right: 40px;
+.section-heading {
+  margin-bottom: 30px;
 }
 
-#ul-subcustom #custom-active a {
-  background-color: #f75a47;
-  color: #fff;
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid #e7e7e7;
 }
 
-.navbar-login {
-  padding: 7px;
+.banner {
+  padding: 100px 0;
+  color: #f8f8f8;
+  background: url(../img/banner-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+.banner h2 {
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 3em;
+}
+.banner ul {
+  margin-bottom: 0;
 }
 
-.custom-panel {
-  padding: 2em;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
+.banner-social-buttons {
+  float: right;
+  margin-top: 0;
 }
 
-.thead-inverse {
-  background-color: #000;
-  color: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    float: left;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+  }
+
+  ul.banner-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}
+footer {
+  padding: 50px 0;
+  background-color: #f8f8f8;
 }
 
-.footer-areas {
-  background-color: #000;
-  height: 300px;
-  display: inline-block;
-  color: #fff;
-  position: absolute;
-}
-.footer-areas .footer-menu {
-  padding: 45px;
-  font-size: 14px;
-  clear: both;
+p.copyright {
+  margin: 15px 0 0;
 }
 
 /*# sourceMappingURL=base.css.map */

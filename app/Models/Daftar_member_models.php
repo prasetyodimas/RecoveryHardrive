@@ -11,8 +11,7 @@ class Daftar_member_models extends Model{
 	protected $fillable          = ['nama_member','jenis_kelamin','notelp_member'];
 
 
-	public static function get_data(){
-		
+	public static function getMember(){
 		$get_user_from_table = DB::table('member_recovery')->get();
 		return $get_user_from_table;
 	}
