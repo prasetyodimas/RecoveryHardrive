@@ -1,21 +1,20 @@
 <?php
-namespace App\Http\Controllers;
-use DB;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Input;
-use App\Models\Daftar_member_models as Members;
 
-class Home_controler extends Controller
+namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+
+class OurserviceController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function ShowService()
     {
-        $data = Members::getMember();
-        return view('home',compact('data'));
+        // $data = Members::getMember();
+        // return view('home',compact('data'));
+        return view('pages/service');
     }
     /**
      * Show the form for creating a new resource.

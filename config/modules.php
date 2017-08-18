@@ -4,169 +4,71 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Module Namespace
+    | Path to Modules
     |--------------------------------------------------------------------------
     |
-    | Default module namespace.
+    | Define the path where you'd like to store your modules. Note that if you
+    | choose a path that's outside of your public directory, you will need to
+    | copy your module assets (CSS, images, etc.) to your public directory.
     |
     */
 
-    'namespace' => 'Modules',
+    'path' => app_path('Modules'),
 
     /*
     |--------------------------------------------------------------------------
-    | Module Stubs
+    | Modules Default State
     |--------------------------------------------------------------------------
     |
-    | Default module stubs.
+    | When a previously unknown module is added, if it doesn't have an 'enabled'
+    | state set then this is the value which it will default to. If this is
+    | not provided then the module will default to being 'enabled'.
     |
     */
 
-    'stubs' => [
-        'enabled' => false,
-        'path' => base_path() . '/vendor/nwidart/laravel-modules/src/Commands/stubs',
-        'files' => [
-            'start' => 'start.php',
-            'routes' => 'Http/routes.php',
-            'views/index' => 'Resources/views/index.blade.php',
-            'views/master' => 'Resources/views/layouts/master.blade.php',
-            'scaffold/config' => 'Config/config.php',
-            'composer' => 'composer.json',
-        ],
-        'replacements' => [
-            'start' => ['LOWER_NAME'],
-            'routes' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
-            'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
-            'views/index' => ['LOWER_NAME'],
-            'views/master' => ['STUDLY_NAME'],
-            'scaffold/config' => ['STUDLY_NAME'],
-            'composer' => [
-                'LOWER_NAME',
-                'STUDLY_NAME',
-                'VENDOR',
-                'AUTHOR_NAME',
-                'AUTHOR_EMAIL',
-                'MODULE_NAMESPACE',
-            ],
-        ],
-    ],
-    'paths' => [
-        /*
-        |--------------------------------------------------------------------------
-        | Modules path
-        |--------------------------------------------------------------------------
-        |
-        | This path used for save the generated module. This path also will be added
-        | automatically to list of scanned folders.
-        |
-        */
+    'enabled' => true,
 
-        'modules' => base_path('Modules'),
-        /*
-        |--------------------------------------------------------------------------
-        | Modules assets path
-        |--------------------------------------------------------------------------
-        |
-        | Here you may update the modules assets path.
-        |
-        */
-
-        'assets' => public_path('modules'),
-        /*
-        |--------------------------------------------------------------------------
-        | The migrations path
-        |--------------------------------------------------------------------------
-        |
-        | Where you run 'module:publish-migration' command, where do you publish the
-        | the migration files?
-        |
-        */
-
-        'migration' => base_path('database/migrations'),
-        /*
-        |--------------------------------------------------------------------------
-        | Generator path
-        |--------------------------------------------------------------------------
-        |
-        | Here you may update the modules generator path.
-        |
-        */
-
-        'generator' => [
-            'assets' => 'Assets',
-            'config' => 'Config',
-            'command' => 'Console',
-            'event' => 'Events',
-            'listener' => 'Listeners',
-            'migration' => 'Database/Migrations',
-            'model' => 'Entities',
-            'repository' => 'Repositories',
-            'seeder' => 'Database/Seeders',
-            'controller' => 'Http/Controllers',
-            'filter' => 'Http/Middleware',
-            'request' => 'Http/Requests',
-            'provider' => 'Providers',
-            'lang' => 'Resources/lang',
-            'views' => 'Resources/views',
-            'test' => 'Tests',
-            'jobs' => 'Jobs',
-            'emails' => 'Emails',
-            'notifications' => 'Notifications',
-        ],
-    ],
     /*
     |--------------------------------------------------------------------------
-    | Scan Path
+    | Modules Base Namespace
     |--------------------------------------------------------------------------
     |
-    | Here you define which folder will be scanned. By default will scan vendor
-    | directory. This is useful if you host the package in packagist website.
-    |
-    */
-
-    'scan' => [
-        'enabled' => false,
-        'paths' => [
-            base_path('vendor/*/*'),
-        ],
-    ],
-    /*
-    |--------------------------------------------------------------------------
-    | Composer File Template
-    |--------------------------------------------------------------------------
-    |
-    | Here is the config for composer.json file, generated by this package
+    | Define the base namespace for your modules. Be sure to update this value
+    | if you move your modules directory to a new path. This is primarily used
+    | by the module:make Artisan command.
     |
     */
 
-    'composer' => [
-        'vendor' => 'nwidart',
-        'author' => [
-            'name' => 'Nicolas Widart',
-            'email' => 'n.widart@gmail.com',
-        ],
-    ],
+    'namespace' => 'App\Modules\\',
+
     /*
     |--------------------------------------------------------------------------
-    | Caching
+    | Default Module Driver
     |--------------------------------------------------------------------------
     |
-    | Here is the config for setting up caching feature.
+    | This option controls the module storage driver that will be utilized.
+    | This driver manages the retrieval and management of module properties.
+    | Setting this to custom allows you to specify your own driver instance.
+    |
+    | Supported: "local"
     |
     */
-    'cache' => [
-        'enabled' => false,
-        'key' => 'laravel-modules',
-        'lifetime' => 60,
-    ],
+
+    'driver' => 'local',
+
     /*
     |--------------------------------------------------------------------------
-    | Choose what laravel-modules will register as custom namespaces.
-    | Setting one to false will require to register that part
-    | in your own Service Provider class.
+    | Remap Module Subdirectories
     |--------------------------------------------------------------------------
+    |
+    | Redefine how module directories are structured. The mapping here will
+    | be respected by all commands and generators.
+    |
     */
-    'register' => [
-        'translations' => true,
+
+    'pathMap' => [
+        // To change where migrations go, specify the default
+        // location as the key and the new location as the value:
+        // 'Database/Migrations' => 'src/Database/Migrations',
     ],
 ];
