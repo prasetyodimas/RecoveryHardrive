@@ -1,9 +1,10 @@
 <?php
 namespace App\Http\Controllers;
-use App\Models\Daftar_member_models;
-use App\Http\Controllers\Input;
-use Illuminate\Http\Request;
 use DB;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Input;
+use App\Models\Daftar_member_models as Members;
+
 class Home_controler extends Controller
 {
     /**
@@ -13,9 +14,8 @@ class Home_controler extends Controller
      */
     public function index()
     {
-        $data = Daftar_member_models::get_data();
+        $data = Members::getMember();
         return view('home',compact('data'));
-        //return view('home');
     }
     /**
      * Show the form for creating a new resource.

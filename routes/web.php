@@ -14,7 +14,21 @@
 //Route::get('/Login_area','Login_controler@login_area');
 //Route::get('/Welcome','Welcome_controller@welcome');
 
-//Action show data from DB & input proggress
 Route::get('/','Home_controler@index');
 Route::post('/simpan','Home_controler@store');
 //Route::put('/View/{id}','Daftar_member_controler@das');
+
+//About-us
+Route::group(['prefix'=>'about'],function(){
+	Route::get('about-us','About_usController@showAbout');
+});
+
+//Services
+Route::group(['prefix'=>'Services'],function(){
+	Route::get('our-service','OurserviceController@showService');
+});
+
+//Contact
+Route::group(['prefix'=>'Contact'],function(){
+	Route::get('our-contact','OurcontactController@showContact');
+});
