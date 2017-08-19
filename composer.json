@@ -6,9 +6,9 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "caffeinated/modules": "^4.2",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "nwidart/laravel-modules": "^1.27",
         "yajra/laravel-datatables-oracle": "~6.0"
     },
     "require-dev": {
