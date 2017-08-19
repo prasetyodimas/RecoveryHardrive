@@ -6,3 +6,7 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin linear-gradient($direction, $color-stop){
+
+}
