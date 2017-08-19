@@ -1,3 +1,6 @@
+/*----------------------
+      THEME CORE 
+-----------------------*/
 body, html {
   width: 100%;
   height: 100%;
@@ -17,13 +20,12 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-/* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 .intro-header {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url(img/banner-bg.jpg) no-repeat center center;
+  background: url(../img/banner-bg.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -146,6 +148,90 @@ footer {
 
 p.copyright {
   margin: 15px 0 0;
+}
+
+/*---------------------
+  FORM WIZARD STEPS
+-----------------------*/
+.bs-wizard {
+  margin-top: 40px;
+  border-bottom: solid 1px #e0e0e0;
+  padding: 0 0 10px 0;
+}
+.bs-wizard > .bs-wizard-step {
+  padding: 0;
+  position: relative;
+}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
+  color: #595959;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {
+  color: #999;
+  font-size: 14px;
+}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: #fbe8aa;
+  top: 45px;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  border-radius: 50%;
+}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {
+  content: ' ';
+  width: 14px;
+  height: 14px;
+  background: #fbbd19;
+  border-radius: 50px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.bs-wizard > .bs-wizard-step > .progress {
+  position: relative;
+  border-radius: 0px;
+  height: 8px;
+  box-shadow: none;
+  margin: 20px 0;
+}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {
+  width: 0px;
+  box-shadow: none;
+  background: #fbe8aa;
+}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
+  width: 100%;
+}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {
+  width: 50%;
+}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {
+  width: 0%;
+}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {
+  width: 100%;
+}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {
+  background-color: #f5f5f5;
+}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {
+  opacity: 0;
+}
+.bs-wizard > .bs-wizard-step:first-child > .progress {
+  left: 50%;
+  width: 50%;
+}
+.bs-wizard > .bs-wizard-step:last-child > .progress {
+  width: 50%;
+}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=base.css.map */
