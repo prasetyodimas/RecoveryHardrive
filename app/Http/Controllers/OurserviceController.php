@@ -14,7 +14,7 @@ class OurserviceController extends Controller
     {
         // $data = Members::getMember();
         // return view('home',compact('data'));
-        return view('pages/service');
+        return view('pages/service-us');
     }
     /**
      * Show the form for creating a new resource.

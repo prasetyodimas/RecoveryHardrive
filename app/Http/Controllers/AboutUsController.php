@@ -12,7 +12,7 @@ class AboutUsController extends Controller
      */
     public function ShowAboutUs()
     {
-        return view('pages/aboutUs');
+        return view('pages/about-us');
     }
     /**
      * Show the form for creating a new resource.
