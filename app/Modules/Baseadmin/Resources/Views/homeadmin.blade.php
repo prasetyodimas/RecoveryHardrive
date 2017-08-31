@@ -1,55 +1,15 @@
 <!DOCTYPE html>
-  <!--[if lt IE 7]>
-    <html class="lt-ie9 lt-ie8 lt-ie7" lang="en">
-  <![endif]-->
-
-  <!--[if IE 7]>
-    <html class="lt-ie9 lt-ie8" lang="en">
-  <![endif]-->
-
-  <!--[if IE 8]>
-    <html class="lt-ie9" lang="en">
-  <![endif]-->
-
-  <!--[if gt IE 8]>
-    <!-->
-    <html lang="en">
-    <!--
-  <![endif]-->
-
+  <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Sunrise Admin</title>
-    <meta name="author" content="Srinu Basava">
-    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-    <meta name="description" content="Sunrise Admin Admin UI">
-    <meta name="keywords" content="Sunrise Admin, Admin UI, Admin Dashboard, Srinu Basava">
-    <script src="js/html5-trunk.js"></script>
-    <link href="icomoon/style.css" rel="stylesheet">
-    <!--[if lte IE 7]>
-    <script src="css/icomoon-font/lte-ie7.js"></script>
-    <![endif]-->
-
-    <!-- bootstrap css -->
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/fullcalendar.css" rel="stylesheet">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40301843-2', 'iamsrinu.com');
-      ga('send', 'pageview');
-
-    </script>
+    @include('baseadmin::header.header')
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo">Sunrise Admin</a>
+      <a href="{{url('baseadmin')}}" class="logo">Adminbase</a>
+      <!-- MINI NAV -->
       <div id="mini-nav">
         <ul class="hidden-phone">
-          <li><a href="timeline.html" >Tasks</a></li>
+          <li><a href="{{url('baseadmin/timeline')}}" >Tasks</a></li>
           <li><a href="#">Signup's <span id="newSignup">06</span></a></li>
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -58,7 +18,7 @@
             </a>
             <ul class="dropdown-menu pull-right">
               <li class="quick-messages">
-                <img src="img/avatar-1.png" class="avatar" alt="Avatar">
+                <img src="{{asset('frontend/adminthemes/img/avatar-1.png')}}" class="avatar" alt="Avatar">
                 <div class="message-date text-info">
                   <i>02 <span class="month">mins</span></i>
                 </div>
@@ -70,7 +30,7 @@
                 </div>
               </li>
               <li class="quick-messages">
-                <img src="img/avatar-2.png" class="avatar" alt="Avatar">
+                <img src="{{asset('frontend/adminthemes/img/avatar-2.png')}}" class="avatar" alt="Avatar">
                 <div class="message-date text-info">
                   <i>02 <span class="month">mins</span></i>
                 </div>
@@ -82,7 +42,7 @@
                 </div>
               </li>
               <li class="quick-messages">
-                <img src="img/avatar-5.png" class="avatar" alt="Avatar">
+                <img src="{{asset('frontend/adminthemes/img/avatar-5.png')}}" class="avatar" alt="Avatar">
                 <div class="message-date text-info">
                   <i>38 <span class="month">mins</span></i>
                 </div>
@@ -94,7 +54,7 @@
                 </div>
               </li>
               <li class="quick-messages">
-                <img src="img/avatar-4.png" class="avatar" alt="Avatar">
+                <img src="{{asset('frontend/adminthemes/img/avatar-4.png')}}" class="avatar" alt="Avatar">
                 <div class="message-date text-info">
                   <i>27 <span class="month">Apr</span></i>
                 </div>
@@ -106,7 +66,7 @@
                 </div>
               </li>
               <li class="quick-messages">
-                <img src="img/avatar-6.png" class="avatar" alt="Avatar">
+                <img src="{{asset('frontend/adminthemes/img/avatar-6.png')}}" class="avatar" alt="Avatar">
                 <div class="message-date text-info">
                   <i>18 <span class="month">Apr</span></i>
                 </div>
@@ -129,7 +89,7 @@
         <ul>
           <li class="active">
             <span class="current-arrow"></span>
-            <a href="index.html">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0a1;"></span>
               </div>
@@ -137,7 +97,7 @@
             </a>
           </li>
           <li>
-            <a href="charts.html">
+            <a href="{{url('baseadmin/timeline')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe097;"></span>
               </div>
@@ -145,7 +105,7 @@
             </a>
           </li>
           <li>
-            <a href="timeline.html">
+            <a href="{{url('baseadmin/timeline')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe047;"></span>
               </div>
@@ -153,7 +113,7 @@
             </a>
           </li>
           <li>
-            <a href="tables.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span>
               </div>
@@ -161,7 +121,7 @@
             </a>
           </li>
           <li>
-            <a href="forms.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0b8;"></span>
               </div>
@@ -169,7 +129,7 @@
             </a>
           </li>
           <li>
-            <a href="ui-elements.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0d2;"></span>
               </div>
@@ -177,7 +137,7 @@
             </a>
           </li>
           <li>
-            <a href="grid.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe14c;"></span>
               </div>
@@ -185,7 +145,7 @@
             </a>
           </li>
           <li>
-            <a href="gallery.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe00d;"></span>
               </div>
@@ -193,7 +153,7 @@
             </a>
           </li>
           <li>
-            <a href="typography.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe100;"></span>
               </div>
@@ -201,7 +161,7 @@
             </a>
           </li>
           <li>
-            <a href="icons.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0a9;"></span>
               </div>
@@ -209,7 +169,7 @@
             </a>
           </li>
           <li>
-            <a href="error.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0f4;"></span>
               </div>
@@ -217,7 +177,7 @@
             </a>
           </li>
           <li>
-            <a href="login.html">
+            <a href="">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe088;"></span>
               </div>
@@ -240,25 +200,25 @@
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                   <ul class="nav">
                     <li>
-                      <a href="index.html">Dashboard</a>
+                      <a href="{{url('baseadmin')}}">Dashboard</a>
                     </li>
                     <li>
-                      <a href="graphs.html">Charts</a>
+                      <a href="">Charts</a>
                     </li>
                     <li>
-                      <a href="timeline.html">Timeline</a>
+                      <a href="{{url('baseadmin/timeline')}}">Timeline</a>
                     </li>
                     <li>
-                      <a href="tables.html">Tables</a>
+                      <a href="">Tables</a>
                     </li>
                     <li>
-                      <a href="forms.html">Forms</a>
+                      <a href="">Forms</a>
                     </li>
                     <li>
-                      <a href="ui-elements.html">UI Elements</a>
+                      <a href="">UI Elements</a>
                     </li>
                     <li>
-                      <a href="grid.html">Grid</a>
+                      <a href="">Grid</a>
                     </li>
                     <li>
                       <a href="gallery.html">Gallery</a>
@@ -285,7 +245,7 @@
             <div class="span12">
               <ul class="breadcrumb-beauty">
                 <li>
-                  <a href="index.html"><span class="fs1" aria-hidden="true" data-icon="&#xe002;"></span> Dashboard</a>
+                  <a href="{{url('baseadmin')}}"><span class="fs1" aria-hidden="true" data-icon="&#xe002;"></span> Dashboard</a>
                 </li>
                 <li>
                   <a href="#">Reports</a>
@@ -868,30 +828,23 @@
       </div><!-- dashboard-container -->
     </div><!-- container-fluid -->
     <footer>
-      <p class="copyright">&copy; Sunrise Admin 2013</p>
+      <p class="copyright">&copy; dimasrecovery {{date('Y')}}</p>
     </footer>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-ui-1.8.23.custom.min.js"></script>
-
+    <script src="{{asset('frontend/adminthemes/js/jquery.min.js')}}"></script>
+    <script src="{{asset('frontend/adminthemes/js/bootstrap.js')}}"></script>
+    <script src="{{asset('frontend/adminthemes/js/jquery-ui-1.8.23.custom.min.js')}}"></script>
     <!-- morris charts -->
-    <script src="js/morris/morris.js"></script>
-    <script src="js/morris/raphael-min.js"></script>
-
+    <script src="{{asset('frontend/adminthemes/js/morris/morris.js')}}"></script>
+    <script src="{{asset('frontend/adminthemes/js/morris/raphael-min.js')}}"></script>
     <!-- Flot charts -->
-    <script src="js/flot/jquery.flot.js"></script>
-    <script src="js/flot/jquery.flot.resize.min.js"></script>
-
+    <script src="{{asset('frontend/adminthemes/js/flot/jquery.flot.js')}}"></script>
+    <script src="{{asset('frontend/adminthemes/js/flot/jquery.flot.resize.min.js')}}"></script>
     <!-- Calendar Js -->
-    <script src="js/fullcalendar.js"></script>
-
+    <script src="{{asset('frontend/adminthemes/js/fullcalendar.js')}}"></script>
     <!-- Tiny Scrollbar JS -->
-    <script src="js/tiny-scrollbar.js"></script>
-
+    <script src="{{asset('frontend/adminthemes/js/tiny-scrollbar.js')}}"></script>
     <!-- custom Js -->
-    <script src="js/custom-index.js"></script>
-    <script src="js/custom.js"></script>
-      
+    <script src="{{asset('frontend/adminthemes/js/custom-index.js')}}"></script>
+    <script src="{{asset('frontend/adminthemes/js/custom.js')}}"></script>
   </body>
 </html>

@@ -12,7 +12,9 @@
 */
 
 Route::group(['prefix' => 'baseadmin'], function () {
-    Route::get('/', function () {
-        dd('This is the Baseadmin module index page. Build something great!');
-    });
+	Route::get('/','HomeAdminController@HomeAdmin');
+
+	Route::group(['prefix' => 'timeline'], function(){
+		Route::get('','TimeLinesController@Timelines');
+	});
 });
