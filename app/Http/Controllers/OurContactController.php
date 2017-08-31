@@ -14,7 +14,7 @@ class OurContactController extends Controller
     {
         // $data = Members::getMember();
         // return view('home',compact('data'));
-        return view('pages/contact');
+        return view('pages/contact-us');
     }
     /**
      * Show the form for creating a new resource.

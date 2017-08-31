@@ -37,13 +37,13 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        $data = new Daftar_member_models();
+      /*  $data = new Daftar_member_models();
         $data->nama_user     = $request->nama_user;
         $data->jenis_kelamin = $request->jk;
         $data->alamat_user   = $request->alamat_user;
         $data->notelp_user   = $request->no_telp;
         $data->save();
-        return redirect('/');
+        return redirect('/');*/
     }
 
     /**

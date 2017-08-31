@@ -7,11 +7,9 @@
 		<div class="navbar-navigation">
 			@include('layout.navbartop')
 		</div>
-
 		<div class="header-main">
 	   	 	@include('includes.header')
-	    </div><!-- header -->
-
+	    </div>
 	    <!-- Page Content -->
 		<a  name="services"></a>
 		<div class="content-section-a">
@@ -21,10 +19,13 @@
 		                <hr class="section-heading-spacer">
 		                <div class="clearfix"></div>
 		                <h2 class="section-heading">Recovery Hardisk</h2>
-		                <p class="lead">A special thanks to <a target="_blank" href="">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+		                <p class="lead"><a target="_blank" href=""></a></p>
+						<div class="nav-linked">
+		                	<a href="" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                </div>		            	
 		            </div>
 		            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-		                <img class="img-responsive" src="{{asset('img/images/hardrive.png')}}" alt="">
+		                <img class="img-responsive" src="{{asset('frontend/img/images/hardrive.png')}}" alt="">
 		            </div>
 		        </div>
 		    </div><!-- /.container -->
@@ -37,15 +38,37 @@
 		                <hr class="section-heading-spacer">
 		                <div class="clearfix"></div>
 		                <h2 class="section-heading">Recovery Flash Disk</h2>
-		                <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+		                <p class="lead">Jasa Recovery Flasdisk <a target="_blank" href=""></a></p>
+		                <div class="nav-linked">
+		                	<a href="" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                </div>
 		            </div>
 		            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-		                <img class="img-responsive" src="{{asset('img/images/flashdisk.png')}}" alt="">
+		                <img class="img-responsive" src="{{asset('frontend/img/images/flashdisk.png')}}" alt="">
 		            </div>
 		        </div>
 		    </div><!-- /.container -->
 		</div> <!-- /.content-section-b -->
 
+		<div class="content-section-a">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-lg-5 col-sm-6">
+		                <hr class="section-heading-spacer">
+		                <div class="clearfix"></div>
+		                <h2 class="section-heading">Recovery CD / DVD </h2>
+		                <p class="lead"><a target="_blank" href=""></a></p>
+						<div class="nav-linked">
+		                	<a href="" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                </div>		            	
+		            </div>
+		            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+		                <img class="img-responsive" src="{{asset('frontend/img/images/cd-drive.png')}}" alt="">
+		            </div>
+		        </div>
+		    </div><!-- /.container -->
+		</div><!-- /.content-section-a -->	
+			
 		<a  name="contact"></a>
 		<div class="banner">
 			<div class="container">
@@ -53,19 +76,19 @@
 			        <div class="col-lg-6">
 			            {{-- <h2>Connect to Start Bootstrap:</h2> --}}
 			        </div>
-			        {{-- <div class="col-lg-6">
+			        <div class="col-lg-6">
 			            <ul class="list-inline banner-social-buttons">
 			                <li>
 			                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
 			                </li>
 			                <li>
-			                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+			                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
 			                </li>
 			                <li>
-			                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+			                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-instagram"></i> <span class="network-name">Instagram</span></a>
 			                </li>
 			            </ul>
-			        </div> --}}
+			        </div>
 			    </div>
 			</div><!-- /.container -->
 		</div><!-- /.banner -->

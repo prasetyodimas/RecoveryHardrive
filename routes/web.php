@@ -10,11 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//Route::get('/Daftar','Daftar_member_controler@Daftar_member');
-//Route::get('/Login_area','Login_controler@login_area');
-//Route::get('/Welcome','Welcome_controller@welcome');
-
-//Route::put('/View/{id}','Daftar_member_controler@das');
 
 //Home
 Route::get('/','HomeController@ShowHomePage');
@@ -31,5 +26,10 @@ Route::group(['prefix'=>'service'],function(){
 
 //Contact
 Route::group(['prefix'=>'contact'],function(){
+	Route::get('','OurContactController@ShowContact');
+});
+
+//Blog Is Comming Soon Features !!
+Route::group(['prefix'=>'blog'],function(){
 	Route::get('','OurContactController@ShowContact');
 });
