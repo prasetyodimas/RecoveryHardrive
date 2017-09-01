@@ -67,7 +67,26 @@
 		            </div>
 		        </div>
 		    </div><!-- /.container -->
-		</div><!-- /.content-section-a -->	
+		</div><!-- /.content-section-a -->
+
+		<div class="content-section-b">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+		                <hr class="section-heading-spacer">
+		                <div class="clearfix"></div>
+		                <h2 class="section-heading">Recovery Handphone</h2>
+		                <p class="lead">Jasa Recovery Handphone <a target="_blank" href=""></a></p>
+		                <div class="nav-linked">
+		                	<a href="" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                </div>
+		            </div>
+		            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+		                <img class="img-responsive" src="{{asset('frontend/img/images/phones.png')}}" alt="">
+		            </div>
+		        </div>
+		    </div><!-- /.container -->
+		</div> <!-- /.content-section-b -->		
 			
 		<a  name="contact"></a>
 		<div class="banner">
