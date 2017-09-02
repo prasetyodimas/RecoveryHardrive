@@ -3,7 +3,7 @@
 namespace App\Modules\Baseadmin\Http\Controllers;
 
 use Illuminate\Http\Request;
-use cafeinated;
+
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 

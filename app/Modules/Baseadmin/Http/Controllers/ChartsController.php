@@ -7,15 +7,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class TimeLinesController extends Controller
+class ChartsController extends Controller
 {
-	/**
+    /**
      * Display a listing of the resource.
-     * Timelines Controller
+     * Charts Controller
      * @return \Illuminate\Http\Response
-    */			
-	public function Timelines()
-	{
-   		return view('baseadmin::timeline');
-	}
+    */
+    public function ChartsView()
+    {
+    	return view('baseadmin::charts')
+    }
 }

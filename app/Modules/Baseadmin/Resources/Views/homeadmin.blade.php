@@ -5,85 +5,11 @@
   </head>
   <body>
     <header>
-      <a href="{{url('baseadmin')}}" class="logo">Adminbase</a>
-      <!-- MINI NAV -->
-      <div id="mini-nav">
-        <ul class="hidden-phone">
-          <li><a href="{{url('baseadmin/timeline')}}" >Tasks</a></li>
-          <li><a href="#">Signup's <span id="newSignup">06</span></a></li>
-          <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              Messages <span id="messagesCountDown">21</span>
-              <b class="caret icon-white"></b>
-            </a>
-            <ul class="dropdown-menu pull-right">
-              <li class="quick-messages">
-                <img src="{{asset('frontend/adminthemes/img/avatar-1.png')}}" class="avatar" alt="Avatar">
-                <div class="message-date text-info">
-                  <i>02 <span class="month">mins</span></i>
-                </div>
-                <div class="message-wrapper">
-                  <h4 class="message-heading">Ubiquitous customized</h4>
-                  <p class="message">
-                    Enable impactful niches engage impactful 
-                  </p>
-                </div>
-              </li>
-              <li class="quick-messages">
-                <img src="{{asset('frontend/adminthemes/img/avatar-2.png')}}" class="avatar" alt="Avatar">
-                <div class="message-date text-info">
-                  <i>02 <span class="month">mins</span></i>
-                </div>
-                <div class="message-wrapper">
-                  <h4 class="message-heading">Ubiquitous customized</h4>
-                  <p class="message">
-                    Enable impactful niches engage impactful 
-                  </p>
-                </div>
-              </li>
-              <li class="quick-messages">
-                <img src="{{asset('frontend/adminthemes/img/avatar-5.png')}}" class="avatar" alt="Avatar">
-                <div class="message-date text-info">
-                  <i>38 <span class="month">mins</span></i>
-                </div>
-                <div class="message-wrapper">
-                  <h4 class="message-heading">Ubiquitous customized</h4>
-                  <p class="message">
-                    Enable impactful niches engage impactful 
-                  </p>
-                </div>
-              </li>
-              <li class="quick-messages">
-                <img src="{{asset('frontend/adminthemes/img/avatar-4.png')}}" class="avatar" alt="Avatar">
-                <div class="message-date text-info">
-                  <i>27 <span class="month">Apr</span></i>
-                </div>
-                <div class="message-wrapper">
-                  <h4 class="message-heading">Ubiquitous customized</h4>
-                  <p class="message">
-                    Enable impactful niches engage impactful 
-                  </p>
-                </div>
-              </li>
-              <li class="quick-messages">
-                <img src="{{asset('frontend/adminthemes/img/avatar-6.png')}}" class="avatar" alt="Avatar">
-                <div class="message-date text-info">
-                  <i>18 <span class="month">Apr</span></i>
-                </div>
-                <div class="message-wrapper">
-                  <h4 class="message-heading">Ubiquitous customized</h4>
-                  <p class="message">
-                    Enable impactful niches engage impactful 
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <li><a href="login.html">Logout</a></li>
-        </ul>
-      </div>
+    <!-- NAV MINI -->
+      @include('baseadmin::nav.mini-nav.mini-nav')
     </header>
 
+    <!-- MAIN NAV -->
     <div class="container-fluid">
       <div id="mainnav" class="hidden-phone hidden-tablet">
         <ul>
@@ -97,7 +23,31 @@
             </a>
           </li>
           <li>
-            <a href="{{url('baseadmin/timeline')}}">
+            <a href="{{url('baseadmin')}}">
+              <div class="icon">
+                <span class="fs1" aria-hidden="true" data-icon="&#xe020;"></span>
+              </div>
+              Data Master
+            </a>
+          </li>
+          <li>
+            <a href="{{url('baseadmin')}}">
+              <div class="icon">
+                <span class="fs1" aria-hidden="true" data-icon="&#xe03f;"></span>
+              </div>
+              Transaksi
+            </a>
+          </li>
+          <li>
+            <a href="{{url('baseadmin')}}">
+              <div class="icon">
+                <span class="fs1" aria-hidden="true" data-icon="&#xe05b;"></span>
+              </div>
+              Laporan
+            </a>
+          </li>
+          <li>
+            <a href="{{url('baseadmin/charts')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe097;"></span>
               </div>
@@ -113,7 +63,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin/tables')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span>
               </div>
@@ -121,7 +71,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0b8;"></span>
               </div>
@@ -129,7 +79,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0d2;"></span>
               </div>
@@ -137,7 +87,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe14c;"></span>
               </div>
@@ -145,7 +95,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe00d;"></span>
               </div>
@@ -153,7 +103,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe100;"></span>
               </div>
@@ -161,7 +111,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0a9;"></span>
               </div>
@@ -169,7 +119,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0f4;"></span>
               </div>
@@ -177,7 +127,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="{{url('baseadmin')}}">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe088;"></span>
               </div>
@@ -203,44 +153,44 @@
                       <a href="{{url('baseadmin')}}">Dashboard</a>
                     </li>
                     <li>
-                      <a href="">Charts</a>
+                      <a href="{{url('baseadmin')}}">Charts</a>
                     </li>
                     <li>
                       <a href="{{url('baseadmin/timeline')}}">Timeline</a>
                     </li>
                     <li>
-                      <a href="">Tables</a>
+                      <a href="{{url('baseadmin')}}">Tables</a>
                     </li>
                     <li>
-                      <a href="">Forms</a>
+                      <a href="{{url('baseadmin')}}">Forms</a>
                     </li>
                     <li>
-                      <a href="">UI Elements</a>
+                      <a href="{{url('basedmin')}}">UI Elements</a>
                     </li>
                     <li>
-                      <a href="">Grid</a>
+                      <a href="{{url('baseadmin')}}">Grid</a>
                     </li>
                     <li>
-                      <a href="gallery.html">Gallery</a>
+                      <a href="{{url('baseadmin')}}">Gallery</a>
                     </li>
                     <li>
-                      <a href="typography.html">Typography</a>
+                      <a href="{{url('baseadmin')}}">Typography</a>
                     </li>
                     <li>
-                      <a href="icons.html">Icons</a>
+                      <a href="{{url('baseadmin')}}">Icons</a>
                     </li>
                     <li>
-                      <a href="login.html">Login</a>
+                      <a href="{{url('baseadmin')}}">Login</a>
                     </li>
                     <li>
-                      <a href="error.html">404</a>
+                      <a href="{{url('baseadmin')}}">404</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-
+          <!-- CONTAINER -->
           <div class="row-fluid">
             <div class="span12">
               <ul class="breadcrumb-beauty">
@@ -488,7 +438,7 @@
                       <div class="overview">
                         <ul class="imp-messages">
                           <li>
-                            <img src="img/avatar-6.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-6.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-info">28</h3>
                               <p class="month">April</p>
@@ -501,7 +451,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-7.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-7.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-error">25</h3>
                               <p class="month">April</p>
@@ -514,7 +464,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-4.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-4.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-success">19</h3>
                               <p class="month">April</p>
@@ -527,7 +477,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-1.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-1.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-warning">12</h3>
                               <p class="month">April</p>
@@ -540,7 +490,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-8.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-8.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-success">10</h3>
                               <p class="month">April</p>
@@ -553,7 +503,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-5.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-5.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-error">29</h3>
                               <p class="month">March</p>
@@ -566,7 +516,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-6.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-6.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-info">22</h3>
                               <p class="month">March</p>
@@ -579,7 +529,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-7.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-7.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-warning">26</h3>
                               <p class="month">March</p>
@@ -592,7 +542,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-1.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-1.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-success">13</h3>
                               <p class="month">March</p>
@@ -605,7 +555,7 @@
                             </div>
                           </li>
                           <li>
-                            <img src="img/avatar-8.png" class="avatar" alt="Avatar"/>
+                            <img src="{{asset('frontend/adminthemes/img/avatar-8.png')}}" class="avatar" alt="Avatar"/>
                             <div class="message-date">
                               <h3 class="date text-warning">09</h3>
                               <p class="month">March</p>

@@ -14,7 +14,19 @@
 Route::group(['prefix' => 'baseadmin'], function () {
 	Route::get('/','HomeAdminController@HomeAdmin');
 
+	Route::group(['prefix' => 'charts'], function(){
+		Route::get('','TimeLinesController@Timelines');
+	});	
+
 	Route::group(['prefix' => 'timeline'], function(){
 		Route::get('','TimeLinesController@Timelines');
 	});
+
+	Route::group(['prefix' => 'table'], function(){
+		Route::get('','TimeLinesController@Timelines');
+	});	
+	
+	Route::group(['prefix' => 'forms'], function(){
+		Route::get('','TimeLinesController@Timelines');
+	});		
 });
