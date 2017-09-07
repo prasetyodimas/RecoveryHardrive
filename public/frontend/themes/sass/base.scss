@@ -31,6 +31,30 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+/*---------------------------
+     NAVBAR 
+-----------------------------*/
+.navbar-default{
+    background-color:$mixedteal !important;
+    border-color:transparent;
+    color: #fff;
+}
+
+.navbar-default{
+  .navbar-brand{
+    color: $secondary-color;
+  }
+} 
+.navbar-default {
+  .navbar-nav{
+    >li{
+      &>a,{
+        color: $secondary-color !important;
+      } 
+    }
+  }
+} 
+
 .intro-header {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -246,4 +270,13 @@ p.copyright {
       pointer-events: none;
     }
   }
+}
+
+/*-------------------------------
+             BUTTON
+--------------------------------*/
+.btn-mixed-grentea{
+  color:$secondary-color;
+  background-color:$mixedturtashgreen;
+  border-color:$primary-color;
 }

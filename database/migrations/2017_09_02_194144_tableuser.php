@@ -15,9 +15,11 @@ class Tableuser extends Migration
     {
         Schema::create('users', function (Blueprint $table)
         {
-            $table->increments('id');
-            $table->string('name');
-            $table->string('jembut');
+            $table->increments('userid');
+            $table->string('name_user');
+            $table->string('pass_user');
+            $table->enum('choices',['admin','superadmin']);
+            $table->enum('choices',['yes','no']);
             $table->timestamps();
         });
     }

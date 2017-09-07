@@ -36,7 +36,6 @@
 			                </div>
 			            </div>
 						<div class="col-lg-8">
-		        
 		 					<h4 class="well">Layanan Konsultasi & Services Hardrive</h4>
 							<div class="row">
 								<div class="col-sm-6 form-group">

@@ -23,7 +23,7 @@
 		                	Komputer & Laptop, Baik Kerusakan Secara Logikal ataupun Fisikal.
 		                </p>
 						<div class="nav-linked">
-		                	<a href="{{url('/baseadmin')}}" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                	<a href="{{url('/baseadmin')}}" class="btn btn-lg btn-mixed-grentea">Selengkapnya..</a>
 		                </div>		            	
 		            </div>
 		            <div class="col-lg-5 col-lg-offset-1 col-sm-6">
