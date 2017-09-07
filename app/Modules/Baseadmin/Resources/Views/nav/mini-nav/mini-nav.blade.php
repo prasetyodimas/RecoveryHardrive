@@ -1,8 +1,7 @@
 <!-- MINI NAV -->
-<a href="{{url('baseadmin')}}" class="logo">Adminbase</a>
+<a href="{{url('baseadmin')}}" class="logo">Admin Recovery Hardrive</a>
 <div id="mini-nav">
   <ul class="hidden-phone">
-    <li><a href="{{url('baseadmin/timeline')}}" >Tasks</a></li>
     <li><a href="#">Signup's <span id="newSignup">06</span></a></li>
     <li class="dropdown">
       <a data-toggle="dropdown" class="dropdown-toggle" href="#">

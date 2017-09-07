@@ -336,7 +336,7 @@ body {
   font: normal 12px arial,sans-serif;
   line-height: 18px;
   color: lighten($primary-color, 10%);
-  background: url(../img/subtle_white_feathers.png);
+  // background: url(../img/subtle_white_feathers.png);
 }
 
 a {
@@ -5581,7 +5581,7 @@ header{
   background: darken($white, 2%);
   border: 1px solid darken($white, 10%);
   @include border-radius(4px);
-  min-height: 1060px;
+  // min-height: 1060px;
   padding: 10px;
   .main-container{
     .plain-header{
@@ -6836,7 +6836,7 @@ header{
 
 // Footer
 footer{
-  background: lighten($primary-color, 55%);
+  // background: lighten($primary-color, 55%);
   height: 24px;
   position: absolute;
   width: 100%;
