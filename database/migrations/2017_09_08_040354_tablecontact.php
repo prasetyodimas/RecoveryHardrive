@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Tableuser extends Migration
+class Tablecontact extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class Tableuser extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table)
+        Schema::create('contact', function (Blueprint $table) 
         {
-            $table->increments('userid');
-            $table->string('name_user');
-            $table->string('pass_user');
-            $table->enum('role_user',['admin','superadmin']);
-            $table->enum('blokir',['yes','no']);
+            $table->increments('contact_id');
+            $table->text('company_addres');
+            $table->text('company_telp');
+            $table->integer('company_postzip');
+            $table->timestamps();
         });
     }
 
@@ -30,6 +30,6 @@ class Tableuser extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('contact');
     }
 }

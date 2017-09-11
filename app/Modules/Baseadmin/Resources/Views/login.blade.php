@@ -1,44 +1,26 @@
 <!DOCTYPE html>
-  <!--[if lt IE 7]>
-    <html class="lt-ie9 lt-ie8 lt-ie7" lang="en">
-  <![endif]-->
-
-  <!--[if IE 7]>
-    <html class="lt-ie9 lt-ie8" lang="en">
-  <![endif]-->
-
-  <!--[if IE 8]>
-    <html class="lt-ie9" lang="en">
-  <![endif]-->
-
-  <!--[if gt IE 8]>
-    <!-->
-    <html lang="en">
-    <!--
-  <![endif]-->
-
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Sunrise Admin</title>
-    <meta name="author" content="Srinu Basava">
+    <title></title>
+    <meta name="author" content="">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-    <meta name="description" content="Sunrise Admin Admin UI">
-    <meta name="keywords" content="Sunrise Admin, Admin UI, Admin Dashboard, Srinu Basava">
-    <script src="js/html5-trunk.js"></script>
-    <link href="icomoon/style.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <!--[if lte IE 7]>
-      <script src="css/icomoon-font/lte-ie7.js"></script>
-    <![endif]-->
-    <script>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS -->
+    <link href="{{asset('frontend/adminthemes/icomoon/style.css')}}" rel="stylesheet">
+    <link href="{{asset('frontend/adminthemes/css/main.css')}}" rel="stylesheet">
+    <!--JS -->
+    <script src="{{asset('frontend/adminthemes/js/html5-trunk.js')}}"></script>
+    <script src="{{asset('frontend/adminthemes/js/jquery.min.js')}}"></script>
+    <script src="{{asset('frontend/adminthemes/js/bootstrap.js')}}"></script>
+    <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40301843-2', 'iamsrinu.com');
+      ga('create', 'UA-40301843-2', 'dimasrecovery.com');
       ga('send', 'pageview');
-
     </script>
   </head>
   <body>
@@ -47,7 +29,8 @@
         <div class="span4 offset4">
           <div class="signin">
             <h1 class="center-align-text">Login</h1>
-            <form action="index.html" class="signin-wrapper" method="post">
+            <form action="{{url('baseadmin/dashboard')}}" class="signin-wrapper" method="post">
+            <input type="text" value="{{csrf_token()}}">
               <div class="content">
                 <input class="input input-block-level" placeholder="Email" type="email" value="">
                 <input class="input input-block-level" placeholder="Password" type="password">
@@ -55,7 +38,7 @@
               <div class="actions">
                 <input class="btn btn-info pull-right" type="submit" value="Login">
                 <span class="checkbox-wrapper">
-                  <a href="index.html" class="pull-left">Forgot Password</a>
+                  <a href="" class="pull-left">Forgot Password</a>
                 </span>
                 <div class="clearfix"></div>
               </div>
@@ -64,9 +47,5 @@
         </div>
       </div>
     </div>
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    
   </body>
 </html>

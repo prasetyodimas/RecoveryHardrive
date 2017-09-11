@@ -7,15 +7,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class HomeAdminController extends Controller
+class LoginAdminController extends Controller
 {
     /**
      * Display a listing of the resource.
      * HomeAdmin Controller
      * @return \Illuminate\Http\Response
     */	
-    public function homeAdmin()
+    public function loginAdmin()
     {	
-   		return view('baseadmin::dashboard');
+   		return view('baseadmin::login');
     }
 }

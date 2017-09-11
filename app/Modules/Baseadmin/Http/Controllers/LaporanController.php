@@ -7,15 +7,15 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class ChartsController extends Controller
+class LaporanController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * Charts Controller
+     * HomeAdmin Controller
      * @return \Illuminate\Http\Response
-    */
-    public function ChartsView()
-    {
-    	return view('baseadmin::charts')
+    */	
+    public function dataLaporan()
+    {	
+   		return view('baseadmin::laporan.index');
     }
 }
