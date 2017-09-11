@@ -1,0 +1,72 @@
+/*----------------------
+      THEME CORE 
+-----------------------*/
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.topnav {
+  font-size: 14px;
+}
+
+.lead {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.intro-divider {
+  width: 400px;
+  border-top: 1px solid $primary-color;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-message > h3 {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.network-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.content-section-a {
+  padding: 50px 0;
+  background-color:$secondary-color;
+}
+
+.content-section-b {
+  padding: 50px 0;
+  border-top: 1px solid $greyborder;
+  border-bottom: 1px solid $greyborder;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+  float: left;
+  width: 200px;
+  border-top: 3px solid $greyborder;
+}
+
+/*----------------------
+        FOOTER 
+------------------------*/
+footer {
+  padding: 50px 0;
+  background-color: $secondary-color;
+}
+
+p.copyright {
+  margin: 15px 0 0;
+}
+

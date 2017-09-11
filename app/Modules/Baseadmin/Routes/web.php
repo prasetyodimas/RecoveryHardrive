@@ -12,21 +12,23 @@
 */
 
 Route::group(['prefix' => 'baseadmin'], function () {
-	Route::get('/','HomeAdminController@HomeAdmin');
-
-	Route::group(['prefix' => 'charts'], function(){
-		Route::get('','TimeLinesController@Timelines');
-	});	
-
-	Route::group(['prefix' => 'timeline'], function(){
-		Route::get('','TimeLinesController@Timelines');
+	Route::get('/','LoginAdminController@loginAdmin');
+	Route::group(['prefix' => 'dashboard'], function(){
+		Route::get('/','HomeAdminController@homeAdmin');
 	});
-
-	Route::group(['prefix' => 'table'], function(){
-		Route::get('','TimeLinesController@Timelines');
+	Route::group(['prefix' => 'data-master'],function(){
+		Route::get('/','DataMasterController@dataMaster');
+	});
+	Route::group(['prefix' => 'transaksi'], function(){
+		Route::get('/','TransaksiController@dataTransaksi');
+	});
+	Route::group(['prefix' => 'laporan'], function(){
+		Route::get('/','LaporanController@dataLaporan');
+	});
+	Route::group(['prefix' => 'pusat-bantuan'], function(){
+		Route::get('/','PusatBantuanController@pusatBantuan');
+	});
+	Route::group(['prefix' => 'setting-user'], function(){
+		Route::get('/','SettingUserController@settingUser');
 	});	
-	
-	Route::group(['prefix' => 'forms'], function(){
-		Route::get('','TimeLinesController@Timelines');
-	});		
 });
