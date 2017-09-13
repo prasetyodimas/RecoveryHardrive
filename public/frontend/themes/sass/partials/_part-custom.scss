@@ -1,0 +1,283 @@
+/*--------------------------- 
+           CONTACT
+-----------------------------*/
+
+.header-title {
+  text-align: center;
+  color: #00bfff;
+}
+
+#tip {
+  display: none;
+}
+
+.fadeIn {
+  animation-duration: 3s;
+}
+
+.form-control {
+  border-radius: 0px;
+  border: 1px solid #EDEDED;
+  &:focus {
+    border: 1px solid #00bfff;
+  }
+}
+
+.textarea-contact {
+  resize: none;
+}
+
+.btn-send {
+  border-radius: 0px;
+  border: 1px solid #00bfff;
+  background: #00bfff;
+  color:$secondary-color;
+  &:hover {
+    border: 1px solid #00bfff;
+    background: $secondary-color;
+    color: #00bfff;
+    transition: background .5s;
+  }
+}
+
+.second-portion {
+  margin-top: 50px;
+}
+
+.box {
+  > .icon {
+    text-align: center;
+    position: relative;
+    > .image {
+      position: relative;
+      z-index: 2;
+      margin: auto;
+      width: 88px;
+      height: 88px;
+      border: 8px solid white;
+      line-height: 88px;
+      border-radius: 50%;
+      background:$redvelvet;
+      vertical-align: middle;
+    }
+    &:hover {
+      > .image {
+        background: #333;
+      }
+      > .image > i {
+        color: white !important;
+      }
+      > .info {
+        background: rgba(0, 0, 0, 0.04);
+        border-color: #e0e0e0;
+        color: white;
+      }
+      > .info > {
+        h3.title, p, .more > a {
+          color: #222;
+        }
+      }
+      > .info > .more > a {
+        color: $secondary-color;
+        padding: 6px 8px;
+        background-color: #63B76C;
+      }
+    }
+    > .image > i {
+      font-size: 36px !important;
+      color: $secondary-color !important;
+    }
+    > .info {
+      margin-top: -24px;
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid #e0e0e0;
+      padding: 15px 0 10px 0;
+      min-height: 163px;
+    }
+    > .info > {
+      h3.title {
+        font-family: "Robot",sans-serif !important;
+        font-size: 16px;
+        color: #222;
+        font-weight: 700;
+      }
+      p {
+        font-family: "Robot",sans-serif !important;
+        font-size: 13px;
+        color: #666;
+        line-height: 1.5em;
+        margin: 20px;
+      }
+    }
+    > .info > .more a {
+      font-family: "Robot",sans-serif !important;
+      font-size: 12px;
+      color: #222;
+      line-height: 12px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+  .space {
+    height: 30px;
+  }
+}
+
+/*--------------------------
+     PROSEDUR SERVICE
+----------------------------*/
+.how-it-works {
+  background: #f5f5fa;
+  padding-bottom: 30px;
+}
+
+.board {
+  /*width: 75%;
+  margin: 60px auto;
+  margin-bottom: 0;
+  box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+  .nav-tabs {
+    position: relative;
+    /* border-bottom: 0; */
+    /* width: 80%; */
+    margin: 40px auto;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+  > div.board-inner > .nav-tabs {
+    border: none;
+  }
+}
+
+p.narrow {
+  width: 60%;
+  margin: 10px auto;
+}
+
+.liner {
+  height: 2px;
+  background: #ddd;
+  position: absolute;
+  width: 80%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+.nav-tabs > li.active > a {
+  color: #555555;
+  cursor: default;
+  background-color: $secondary-color;
+  border: 0;
+  border-bottom-color: transparent;
+  outline: 0;
+  &:hover, &:focus {
+    color: #555555;
+    cursor: default;
+    background-color: $secondary-color; 
+    border: 0;
+    border-bottom-color: transparent;
+    outline: 0;
+  }
+}
+
+span.round-tabs {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  display: inline-block;
+  border-radius: 100px;
+  background: white;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-size: 25px;
+  &.one {
+    border: 2px solid #ddd;
+    color: #ddd;
+  }
+}
+
+li.active span.round-tabs {
+  &.one, &.two, &.three, &.four, &.five {
+    background: $redvelvet !important;
+    border: 2px solid $redvelvet-dark;
+    color: $secondary-color;
+  }
+}
+
+span.round-tabs {
+  &.two, &.three, &.four, &.five {
+    border: 2px solid #ddd;
+    color: #ddd;
+  }
+}
+
+.nav-tabs > li {
+  &.active > a span.round-tabs {
+    background: #fafafa;
+  }
+  width: 20%;
+  a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.tab-content {}
+
+.tab-pane {
+  position: relative;
+  padding-top: 50px;
+}
+
+.btn-outline-rounded {
+  padding: 10px 40px;
+  margin: 20px 0;
+  border: 2px solid transparent;
+  border-radius: 25px;
+}
+
+.btn.green {
+  background-color: $redvelvet;
+  border: 2px solid $redvelvet-dark;
+  color: $secondary-color;
+}
+
+@media (max-width: 585px) {
+  .board {
+    width: 90%;
+    height: auto !important;
+  }
+  span.round-tabs {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .tab-content .head {
+    font-size: 20px;
+  }
+  .nav-tabs > li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+  li.active:after {
+    content: " ";
+    position: absolute;
+    left: 35%;
+  }
+  .btn-outline-rounded {
+    padding: 12px 20px;
+  }
+}

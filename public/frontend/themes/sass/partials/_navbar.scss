@@ -8,16 +8,19 @@
 
 .navbar-default{
   .navbar-brand{
-    color: $bluesky;
+    color: $blackdark;
   }
 } 
 .navbar-default {
   .navbar-nav{
     >li{
       &>a,{
-        color: $bluesky;
+        color: $blackdark;
         text-transform: uppercase;
       } 
+    }
+    & a:hover{
+        color:$secondary-color;
     }
   }
 } 
