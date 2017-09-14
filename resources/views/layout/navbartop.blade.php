@@ -14,12 +14,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="{{Request::segment(1)}}"><a href="{{url('/')}}">Home</a></li> 
-                <li><a href="{{url('about')}}">About</a></li> 
-                <li><a href="{{url('service')}}">Services</a></li> 
-                <li><a href="{{url('contact')}}">Contact</a></li> 
-                <li><a href="{{url('blog')}}">Blog</a></li> 
+                <li class="{{Request::segment(1)=='' ? 'active':''}}"><a href="{{url('/')}}">Home</a></li>
+                <li class="{{Request::segment(1)=='about' ? 'active':''}}"><a href="{{url('about')}}">About</a></li>
+                <li class="{{Request::segment(1)=='service' ? 'active':''}}"><a href="{{url('service')}}">Services</a></li>
+                <li class="{{Request::segment(1)=='contact' ? 'active':''}}"><a href="{{url('contact')}}">Contact</a></li>
+                <li class="{{Request::segment(1)=='blog' ? 'active':''}}"><a href="{{url('blog')}}">Blog</a></li>
             </ul>
         </div> <!-- /.navbar-collapse -->
     </div><!-- /.container -->
-</nav>		
+</nav>

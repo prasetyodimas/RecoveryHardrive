@@ -10,9 +10,9 @@
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/themes/css/app.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/themes/css/base.css')}}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One">
 <link rel="stylesheet" type="text/css" href="{{asset('frontend/font-awesome-4.6.3/css/font-awesome.min.css')}}">
 <!-- JS -->
 <script type="text/javascript" src="{{asset('frontend/js/jquery.1.12.4.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('frontend/plugins/Greenshock/TweenMax.min.js.min.js')}}"></script>
-	
+<script type="text/javascript" src="{{asset('frontend/plugins/Greenshock/TweenMax.min.js')}}"></script>
