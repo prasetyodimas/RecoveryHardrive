@@ -1,6 +1,7 @@
 /*---------------------------
-     NAVBAR 
+     NAVBAR
 -----------------------------*/
+.navbar-default .navbar-nav>.active>a
 .navbar-default{
     background-color:$secondary-color !important;
     border-color:transparent;
@@ -10,20 +11,23 @@
   .navbar-brand{
     color: $blackdark;
   }
-} 
+}
 .navbar-default {
   .navbar-nav{
-    >li{
-      &>a,{
+    a.active{
+      
+    }
+    > li{
+      & > a,{
         color: $blackdark;
         text-transform: uppercase;
-      } 
+      }
     }
     & a:hover{
         color:$secondary-color;
     }
   }
-} 
+}
 .container{
   padding-top:10px;
   padding-bottom:10px;
