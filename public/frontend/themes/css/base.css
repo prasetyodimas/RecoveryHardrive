@@ -26,7 +26,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 /*----------------------
-    FONT FAMILYS
+    FONT FAMILY USE
 ------------------------*/
 .font-fams-poiretOne, .section-heading, .tag-title, .content-price-list .header-list-service {
   font-family: 'Poiret One', cursive;
@@ -67,6 +67,31 @@ body, h1, h2, h3, h4, h5, h6 {
   padding: 50px 0;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
+}
+
+.container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.intro-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(../../img/images/banner-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.intro-message > h1 {
+  margin: 0;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 5em;
 }
 
 /*----------------------
@@ -244,49 +269,29 @@ footer {
 }
 
 /*---------------------------
-     NAVBAR
+     NAVBAR MAIN
 -----------------------------*/
-.navbar-default .navbar-nav > .active > a
 .navbar-default {
   background-color: #fff !important;
   border-color: transparent;
 }
-
 .navbar-default .navbar-brand {
   color: #000;
 }
-
-.navbar-default .navbar-nav > li > a {
-  color: #000;
+.navbar-default .navbar-nav li > a {
   text-transform: uppercase;
 }
-.navbar-default .navbar-nav a:hover {
+.navbar-default .navbar-nav li a:hover {
+  color: #ff4157;
+}
+.navbar-default .navbar-nav .active > a {
+  color: #ff4157;
+  background-color: #fff;
+  border-bottom: 2px solid #ff4157;
+}
+.navbar-default .navbar-nav .active > a:hover {
+  background-color: #ff4157;
   color: #fff;
-}
-
-.container {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.intro-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  color: #f8f8f8;
-  background: url(../../img/images/banner-bg.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.intro-message {
-  position: relative;
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
-.intro-message > h1 {
-  margin: 0;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  font-size: 5em;
 }
 
 /*-------------------------------

@@ -11,7 +11,7 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 /*----------------------
-    FONT FAMILYS
+    FONT FAMILY USE
 ------------------------*/
 .font-fams-poiretOne{
    font-family: 'Poiret One', cursive;
@@ -53,6 +53,32 @@ body, h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid $greyborder;
   border-bottom: 1px solid $greyborder;
 }
+
+.container{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.intro-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: $primary-color;
+  background: url(../../img/images/banner-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 5em;
+  }
+}
+
 /*----------------------
     SECTION HEADING
 ------------------------*/

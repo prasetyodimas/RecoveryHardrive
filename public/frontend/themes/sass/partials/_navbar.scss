@@ -1,53 +1,31 @@
 /*---------------------------
-     NAVBAR
+     NAVBAR MAIN
 -----------------------------*/
-.navbar-default .navbar-nav>.active>a
-.navbar-default{
-    background-color:$secondary-color !important;
+.navbar-default {
+    background-color: $secondary-color !important;
     border-color:transparent;
-}
-
-.navbar-default{
   .navbar-brand{
     color: $blackdark;
   }
-}
-.navbar-default {
-  .navbar-nav{
-    a.active{
-      
-    }
-    > li{
+  .navbar-nav {
+    li {
       & > a,{
-        color: $blackdark;
         text-transform: uppercase;
       }
+      & a:hover {
+        color: $redvelvet;
+      }
     }
-    & a:hover{
-        color:$secondary-color;
+    .active > {
+      a {
+          color:$redvelvet;
+          background-color:$secondary-color;
+          border-bottom: 2px solid $redvelvet;
+      }
+      a:hover {
+        background-color: $redvelvet;
+        color: $secondary-color;
+      }
     }
-  }
-}
-.container{
-  padding-top:10px;
-  padding-bottom:10px;
-}
-.intro-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  color: $primary-color;
-  background: url(../../img/images/banner-bg.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.intro-message {
-  position: relative;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 5em;
   }
 }
