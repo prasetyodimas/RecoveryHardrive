@@ -96,7 +96,7 @@
 		    </div><!-- /.container -->
 		</div> <!-- /.content-section-b -->
 
-        <div class="content-section-a content-price-list">
+        {{-- <div class="content-section-a content-price-list">
             <div class="form-group">
                 <h2 class="text-center text-uppercase header-list-service">Paket Servis / Harga layanan</h2>
             </div>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Prosedur Layanan -->
         <section  class="section how-it-works" id="how-it-works">
@@ -214,10 +214,10 @@
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="uidesign">
-                                <h3 class="head text-center"></h3>
+                                <h3 class="head text-center">Kendala Dalam Proses Recovery</h3>
                                 <p class="narrow text-center">
+																	Jika Dalam Pengerjaan proses recovery yang sedang berlangsung terdapat kendala dalam penyelamatan data misalnya harus membeli spare part pendukung maka biaya recovery belum termasuk dengan biaya spare part tersebut.
                                 </p>
-
                                 <p class="text-center">
                                     <a href="" class="btn btn-success btn-outline-rounded green"> Kami Solusinya <i class="fa fa-handshake-o"></i></a>
                                 </p>
@@ -226,8 +226,9 @@
                                 <div class="text-center">
                                     <i class="img-intro icon-checkmark-circle"></i>
                                 </div>
-                                <h3 class="head text-center"></h3>
+                                <h3 class="head text-center">Estimasi Pengerjaan</h3>
                                 <p class="narrow text-center">
+																  Untuk Estimasi Biaya Pengerjaan Recovery data harga menyesuaikan dengan kapasitas media simpan yang anda miliki.
                                 </p>
                                 <p class="text-center">
                                     <a href="" class="btn btn-success btn-outline-rounded green"> Kami Solusinya <i class="fa fa-handshake-o"></i></a>
