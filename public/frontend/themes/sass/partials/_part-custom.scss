@@ -1,10 +1,9 @@
-/*--------------------------- 
+/*---------------------------
            CONTACT
 -----------------------------*/
 
 .header-title {
   text-align: center;
-  color: #00bfff;
 }
 
 #tip {
@@ -176,7 +175,7 @@ p.narrow {
   &:hover, &:focus {
     color: #555555;
     cursor: default;
-    background-color: $secondary-color; 
+    background-color: $secondary-color;
     border: 0;
     border-bottom-color: transparent;
     outline: 0;
