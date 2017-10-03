@@ -39,7 +39,7 @@
                         <div class="info">
                             <h3 class="title">MAIL</h3>
                             <p>
-                                <i class="fa fa-2x fa-envelope" aria-hidden="true"></i> dimasrecovery@gmail.com
+                                <i class="fa fa-2x fa-envelope" aria-hidden="true"></i> recoveryhardrive@gmail.com
                                 <br>
                             </p>
                         </div>
@@ -58,7 +58,7 @@
                                 <i class="fa fa-2x fa-mobile" aria-hidden="true"></i> &nbsp (+62)85-803-256-647
                                 <br>
                                 <br>
-                                <i class="fa fa-2x fa-mobile" aria-hidden="true"></i> &nbsp  (+62)-21-3602-1788
+                                <i class="fa fa-2x fa-mobile" aria-hidden="true"></i> &nbsp  (+62)-821-3602-1788
                             </p>
                         </div>
                     </div>

@@ -2,16 +2,8 @@
   DIMAS RECOVERY
   THEME BUILD BY BOOTSTRAP LANDING PAGE
   LICENSE UNDER MIT
-  Develop ANd Custom Theme By Dimas Prasetyo (dimasprasetyo485@gmail.com)
+  Develop And Custom Theme By Dimas Prasetyo (dimasprasetyo485@gmail.com)
 !*/
-/*----------------------
-      FONT FAMILY
--------------------------*/
-@font-face {
-  font-family: "poiret-oneregular";
-  src: url("fonts/font-poiret/Poiret One/poiretone-regular.woff.eot");
-  src: url("fonts/font-poiret/Poiret One/poiretone-regular.woff.eot?#iefix") format("embedded-opentype"), url("fonts/font-poiret/Poiret One/poiretone-regular.woff.woff") format("woff"), url("fonts/font-poiret/Poiret One/poiretone-regular.woff.ttf") format("truetype"), url("fonts/font-poiret/Poiret One/poiretone-regular.woff.svg#poiret-oneregular") format("svg");
-}
 /*----------------------
       THEME CORE
 -----------------------*/
@@ -268,6 +260,15 @@ footer {
   font-size: 12px;
 }
 
+/*-------------------------------
+             BUTTON
+--------------------------------*/
+.btn-mixed-grentea {
+  color: #fff;
+  background-color: #77afa1;
+  border-color: #f8f8f8;
+}
+
 /*---------------------------
      NAVBAR MAIN
 -----------------------------*/
@@ -294,15 +295,52 @@ footer {
   color: #fff;
 }
 
-/*-------------------------------
-             BUTTON
---------------------------------*/
-.btn-mixed-grentea {
-  color: #fff;
-  background-color: #77afa1;
-  border-color: #f8f8f8;
-}
+/*--------------------------------
+            RESPONSIVE
+----------------------------------*/
+@media (max-width: 767px) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+  .intro-message > h1 {
+    font-size: 3em;
+  }
 
+  ul.intro-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.intro-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+
+  .intro-divider {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    float: left;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+  }
+
+  ul.banner-social-buttons > li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons > li:last-child {
+    margin-bottom: 0;
+  }
+}
 /*----------------------
         BANNER 
 ------------------------*/
@@ -682,51 +720,13 @@ span.round-tabs.two, span.round-tabs.three, span.round-tabs.four, span.round-tab
   pointer-events: none;
 }
 
-/*--------------------------------
-            RESPONSIVE
-----------------------------------*/
-@media (max-width: 767px) {
-  .intro-message {
-    padding-bottom: 15%;
-  }
-  .intro-message > h1 {
-    font-size: 3em;
-  }
-
-  ul.intro-social-buttons > li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.intro-social-buttons > li:last-child {
-    margin-bottom: 0;
-  }
-
-  .intro-divider {
-    width: 100%;
-  }
-}
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    float: left;
-    margin-top: 15px;
-  }
-}
-@media (max-width: 767px) {
-  .banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    font-size: 3em;
-  }
-
-  ul.banner-social-buttons > li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons > li:last-child {
-    margin-bottom: 0;
-  }
+/*----------------------
+      FONT FAMILY
+-------------------------*/
+@font-face {
+  font-family: "poiret-oneregular";
+  src: url("fonts/font-poiret/Poiret One/poiretone-regular.woff.eot");
+  src: url("fonts/font-poiret/Poiret One/poiretone-regular.woff.eot?#iefix") format("embedded-opentype"), url("fonts/font-poiret/Poiret One/poiretone-regular.woff.woff") format("woff"), url("fonts/font-poiret/Poiret One/poiretone-regular.woff.ttf") format("truetype"), url("fonts/font-poiret/Poiret One/poiretone-regular.woff.svg#poiret-oneregular") format("svg");
 }
 
-/*# sourceMappingURL=base.css.map */
+/*# sourceMappingURL=front-base.css.map */
