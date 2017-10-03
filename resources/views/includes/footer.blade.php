@@ -26,8 +26,8 @@
       <div class="col-md-3 col-sm-6 paddingtop-bottom">
         <div class="fb-page" data-href="" data-tabs="timeline" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
           <div class="navigation-link-social">
-              <blockquote cite=""><a class="" href=""><i class="fa fa-facebook"></i> Facebook</a></blockquote>
-              <blockquote cite=""><a class="" href=""><i class="fa fa-instagram"></i> Instagram</a></blockquote>
+              <blockquote cite=""><a class="" href="https://www.facebook.com/dimas.setyo.35728466" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></blockquote>
+              <blockquote cite=""><a class="" href="https://www.instagram.com/dimasrecovery" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></blockquote>
               <blockquote cite=""><a class="" href=""><i class="fa fa-twitter"></i> Twitter</a></blockquote>
           </div>
         </div>

@@ -153,30 +153,30 @@
                                 <li class="active">
                                     <a href="#home" aria-controls="home" role="tab" data-toggle="tab" title="">
                                       <span class="round-tabs one">
-                                          <i class="icon icon-profile-male"></i>
+                                          <i class="fa fa-check"></i>
                                       </span>
                                     </a></li>
                                 <li><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" title="">
                                      <span class="round-tabs two">
-                                         <i class="icon icon-pencil"></i>
+                                         <i class="fa fa-check"></i>
                                      </span>
                                     </a>
                                 </li>
                                 <li><a href="#prototyping" aria-controls="prototyping" role="tab" data-toggle="tab" title="">
                                      <span class="round-tabs three">
-                                          <i class="icon icon-layers"></i>
+                                          <i class="fa fa-check"></i>
                                      </span>
                                     </a>
                                 </li>
                                 <li><a href="#uidesign" aria-controls="uidesign" role="tab" data-toggle="tab" title="">
                                      <span class="round-tabs four">
-                                          <i class="icon icon-aperture"></i>
+                                          <i class="fa fa-check"></i>
                                      </span>
                                     </a>
                                 </li>
                                 <li><a href="#doner" aria-controls="doner" role="tab" data-toggle="tab" title="">
                                      <span class="round-tabs five">
-                                          <i class="icon icon-tools-2"></i>
+                                          <i class="fa fa-check"></i>
                                      </span>
                                     </a>
                                 </li>
