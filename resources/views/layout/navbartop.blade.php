@@ -19,6 +19,7 @@
                 <li class="{{Request::segment(1)=='service' ? 'active':''}}"><a href="{{url('service')}}">Services</a></li>
                 <li class="{{Request::segment(1)=='contact' ? 'active':''}}"><a href="{{url('contact')}}">Contact</a></li>
                 <li class="{{Request::segment(1)=='blog' ? 'active':''}}"><a href="https://dimasrecovery.wordpress.com" target="_blank">Blog</a></li>
+                <li class="{{Request::segment(1)=='login' ? 'active':''}}"><a href="{{url('home')}}">Login</a></li>
             </ul>
         </div> <!-- /.navbar-collapse -->
     </div><!-- /.container -->

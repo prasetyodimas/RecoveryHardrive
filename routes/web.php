@@ -12,7 +12,7 @@
 */
 
 //Home
-Route::get('/','HomeController@ShowHomePage');
+Route::get('/','HomeAppController@ShowHomePage');
 
 //About-us
 Route::group(['prefix'=>'about'],function(){
@@ -33,3 +33,12 @@ Route::group(['prefix'=>'contact'],function(){
 Route::group(['prefix'=>'blog'],function(){
 	Route::get('','OurContactController@ShowContact');
 });
+
+//Auth Function !!
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
