@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Tableappname extends Migration
+class CreateAppnameTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class Tableappname extends Migration
      */
     public function up()
     {
-        Schema::create('appname', function(Blueprint $table)
-        {
-            $table->increments('id_app_name');
-            $table->string('app_name');
+        Schema::create('appname', function (Blueprint $table) {
+            $table->primary('id_app_name');
+            $table->('');
         });
-
     }
 
     /**
@@ -28,6 +26,6 @@ class Tableappname extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Tableappname');
+        Schema::dropIfExists('appname');
     }
 }

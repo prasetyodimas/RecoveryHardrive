@@ -1,43 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 <head>
   <meta charset="utf-8">
   <title>Admin Sistem</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
   <meta name="description" content="">
   <meta name="keywords" content="">
+  <input type="hidden" name="_token" value="{!! csrf_token() !!}">
   <!-- FAVICON -->  
-  <link rel="icon" type="image/png" sizes="16x16" href="{{asset('frontend/img/favico/favicon-16.png')}}">
-  <link href="{{asset('../frontend/adminthemes/icomoon/style.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/img/favico/favicon-16.png')}}" rel="icon" type="image/png" sizes="16x16" >
+  <link href="{{asset('frontend/adminthemes/icomoon/style.css')}}" rel="stylesheet">
   <!-- BOOTSTRAP.CSS -->
-  <link href="{{asset('../frontend/adminthemes/css/main.css')}}" rel="stylesheet">
-  <link href="{{asset('../frontend/adminthemes/css/fullcalendar.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/adminthemes/css/main.css')}}" rel="stylesheet">
+  <link href="{{asset('frontend/adminthemes/css/fullcalendar.css')}}" rel="stylesheet">
   <!-- JAVASCRIPT -->
   <script src="{{asset('../frontend/adminthemes/js/html5-trunk.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/jquery.min.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/bootstrap.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/jquery-ui-1.8.23.custom.min.js')}}"></script>
   <!-- morris charts -->
-  <script src="{{asset('frontend/adminthemes/js/morris/morris.js')}}"></script>
-  <script src="{{asset('frontend/adminthemes/js/morris/raphael-min.js')}}"></script>
+  {{-- <script src="{{asset('frontend/adminthemes/js/morris/morris.js')}}"></script> --}}
+  {{-- <script src="{{asset('frontend/adminthemes/js/morris/raphael-min.js')}}"></script> --}}
   <!-- Flot charts -->
   <!--<script src="{{asset('frontend/adminthemes/js/flot/jquery.flot.js')}}"></script>-->
   <!--<script src="{{asset('frontend/adminthemes/js/flot/jquery.flot.resize.min.js')}}"></script>-->
   <!-- Calendar Js -->
-  <script src="{{asset('frontend/adminthemes/js/fullcalendar.js')}}"></script>
+  {{-- <script src="{{asset('frontend/adminthemes/js/fullcalendar.js')}}"></script> --}}
   <!-- Tiny Scrollbar JS -->
-  <script src="{{asset('frontend/adminthemes/js/tiny-scrollbar.js')}}"></script>
+  {{-- <script src="{{asset('frontend/adminthemes/js/tiny-scrollbar.js')}}"></script> --}}
   <!-- custom Js -->
   <!--<script src="{{asset('frontend/adminthemes/js/custom-index.js')}}"></script>-->
   <script src="{{asset('frontend/adminthemes/js/custom.js')}}"></script>
-  <script type="text/javascript">
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-40301843-2', 'iamsrinu.com');
-      ga('send', 'pageview');
-  </script>
 </head>
 <body>
   <!-- NAV MINI -->
@@ -66,7 +59,7 @@
             </li>
           </ul>
         </li>
-        <li><a href="">Logout</a></li>
+        <li><a href="{{url('baseadmin/logout')}}">Logout</a></li>
       </ul>
     </div>
   </header>

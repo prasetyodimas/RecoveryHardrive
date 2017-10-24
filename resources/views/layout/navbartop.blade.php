@@ -9,17 +9,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand topnav" href="{{url('/')}}">DIMAS RECOVERY</a>
+            <a class="navbar-brand topnav text-uppercase" href="{{url('/')}}"> {{Theme::titleApps()}}</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="{{Request::segment(1)=='' ? 'active':''}}"><a href="{{url('/')}}">Home</a></li>
                 <li class="{{Request::segment(1)=='about' ? 'active':''}}"><a href="{{url('about')}}">About</a></li>
-                <li class="{{Request::segment(1)=='service' ? 'active':''}}"><a href="{{url('service')}}">Services</a></li>
+                {{-- <li class="{{Request::segment(1)=='service' ? 'active':''}}"><a href="{{url('service')}}">Services</a></li> --}}
                 <li class="{{Request::segment(1)=='contact' ? 'active':''}}"><a href="{{url('contact')}}">Contact</a></li>
                 <li class="{{Request::segment(1)=='blog' ? 'active':''}}"><a href="https://dimasrecovery.wordpress.com" target="_blank">Blog</a></li>
-                <li class="{{Request::segment(1)=='login' ? 'active':''}}"><a href="{{url('home')}}">Login</a></li>
             </ul>
         </div> <!-- /.navbar-collapse -->
     </div><!-- /.container -->

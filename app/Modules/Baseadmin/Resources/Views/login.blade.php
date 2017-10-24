@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>{{Theme::titleApps()}}</title>
     <meta name="author" content="">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
     <meta name="description" content="">
@@ -29,11 +29,11 @@
         <div class="span4 offset4">
           <div class="signin">
             <h1 class="center-align-text">Login</h1>
-            <form action="{{url('baseadmin/dashboard')}}" class="signin-wrapper" method="post">
-            <input type="text" value="{{csrf_token()}}">
+            <form action="{{url('baseadmin')}}" class="signin-wrapper" method="post">
+              <input type="hidden" name="_token" value="{!! csrf_token() !!}">
               <div class="content">
-                <input class="input input-block-level" placeholder="Email" type="email" value="">
-                <input class="input input-block-level" placeholder="Password" type="password">
+                <input class="input input-block-level" name="email" placeholder="Email" type="email" value="">
+                <input class="input input-block-level" name="password" placeholder="Password" type="password">
               </div>
               <div class="actions">
                 <input class="btn btn-info pull-right" type="submit" value="Login">
