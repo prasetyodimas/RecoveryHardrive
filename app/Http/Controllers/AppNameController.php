@@ -1,18 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\AppName;
 use Illuminate\Http\Request;
 
-class Login_controler extends Controller
+class AppNameController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function login_area()
+    public function index()
     {
-        return view('login');
+        //
     }
 
     /**
@@ -39,10 +41,10 @@ class Login_controler extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\AppName  $appName
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(AppName $appName)
     {
         //
     }
@@ -50,10 +52,10 @@ class Login_controler extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\AppName  $appName
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(AppName $appName)
     {
         //
     }
@@ -62,10 +64,10 @@ class Login_controler extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\AppName  $appName
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, AppName $appName)
     {
         //
     }
@@ -73,10 +75,10 @@ class Login_controler extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\AppName  $appName
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(AppName $appName)
     {
         //
     }

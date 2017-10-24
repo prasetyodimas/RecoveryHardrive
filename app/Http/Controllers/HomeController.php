@@ -23,6 +23,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('baseadmin::login');
+    }
+
+    public function dashboard()
+    {
+        return view('baseadmin::dashboard');
     }
 }

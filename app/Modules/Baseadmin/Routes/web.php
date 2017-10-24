@@ -10,12 +10,12 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+Route::group(['prefix'=>'baseadmin'],function(){
+	Route::get('/','LoginAdminController@redirectLogin');
+	Route::post('/','LoginAdminController@postAdminLogin');
+	Route::get('/logout','LoginAdminController@getSignOut');
+	Route::get('/dashboard','HomeAdminController@homeAdmin');
 
-Route::group(['prefix' => 'baseadmin'], function () {
-	Route::get('/','LoginAdminController@loginAdmin');
-	Route::group(['prefix' => 'dashboard'], function(){
-		Route::get('/','HomeAdminController@homeAdmin');
-	});
 	Route::group(['prefix' => 'data-master'],function(){
 		Route::get('/','DataMasterController@dataMaster');
 	});

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Models\User as userList;
+use DB;
 
 class SettingUserController extends Controller
 {
@@ -16,6 +18,8 @@ class SettingUserController extends Controller
 	*/	
     public function settingUser()
     {
-    	return view('baseadmin::setting-user.index');
+    	$dataUser = userList::get()->all();
+    	return view('baseadmin::setting-user.index',compact('dataUser'));
     }
+
 }

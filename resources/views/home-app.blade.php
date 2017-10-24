@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="{{ app()->getLocale() }}">
 	<head>
 		@include('includes.head')
 	</head>
@@ -241,7 +241,6 @@
                 </div>
             </div>
         </section>
-
 		<!-- Footer -->
 	    <footer>
 	        @include('includes.footer')

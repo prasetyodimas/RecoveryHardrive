@@ -10,7 +10,7 @@
                 <div class="clearfix"></div>
                 <h2 class="section-heading">About Us</h2>
                 <p class="lead">
-                    Dimas Recovery adalah jasa penyelamatan data (data recovery service) yang berbasis di Yogyakarta. Kami menangani kasus-kasus
+                    {{Theme::titleApps()}} adalah jasa penyelamatan data (data recovery service) yang berbasis di Yogyakarta. Kami menangani kasus-kasus
                     kehilangan data (data loss) dengan teknologi penyelamatan data terkini. Kami dapat menyelamatkan data dari berbagai jenis media simpan dengan harga terjangkau.
                     Layanan kami terjamin. Kami memberikan garansi atas perbaikan yang kami lakukan. Kerahasiaan data
                     Anda selalu kami jamin. Apabila data Anda tidak terselamatkan, Anda tidak perlu membayar biaya apapun.
