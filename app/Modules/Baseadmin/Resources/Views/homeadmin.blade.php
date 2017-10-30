@@ -8,7 +8,7 @@
   <meta name="keywords" content="">
   <input type="hidden" name="_token" value="{!! csrf_token() !!}">
   <!-- FAVICON -->  
-  <link href="{{asset('frontend/img/favico/favicon-16.png')}}" rel="icon" type="image/png" sizes="16x16" >
+  <link href="{{asset('frontend/fronthemes/asset-images/favico/favicon-16.png')}}" rel="shorcut icon">
   <link href="{{asset('frontend/adminthemes/icomoon/style.css')}}" rel="stylesheet">
   <!-- BOOTSTRAP.CSS -->
   <link href="{{asset('frontend/adminthemes/css/main.css')}}" rel="stylesheet">
@@ -19,17 +19,17 @@
   <script src="{{asset('frontend/adminthemes/js/bootstrap.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/jquery-ui-1.8.23.custom.min.js')}}"></script>
   <!-- morris charts -->
-  {{-- <script src="{{asset('frontend/adminthemes/js/morris/morris.js')}}"></script> --}}
-  {{-- <script src="{{asset('frontend/adminthemes/js/morris/raphael-min.js')}}"></script> --}}
+  <script src="{{asset('frontend/adminthemes/js/morris/morris.js')}}"></script>
+  <script src="{{asset('frontend/adminthemes/js/morris/raphael-min.js')}}"></script>
   <!-- Flot charts -->
-  <!--<script src="{{asset('frontend/adminthemes/js/flot/jquery.flot.js')}}"></script>-->
-  <!--<script src="{{asset('frontend/adminthemes/js/flot/jquery.flot.resize.min.js')}}"></script>-->
+  <script src="{{asset('frontend/adminthemes/js/flot/jquery.flot.js')}}"></script>
+  <script src="{{asset('frontend/adminthemes/js/flot/jquery.flot.resize.min.js')}}"></script>
   <!-- Calendar Js -->
-  {{-- <script src="{{asset('frontend/adminthemes/js/fullcalendar.js')}}"></script> --}}
+  <script src="{{asset('frontend/adminthemes/js/fullcalendar.js')}}"></script>
   <!-- Tiny Scrollbar JS -->
-  {{-- <script src="{{asset('frontend/adminthemes/js/tiny-scrollbar.js')}}"></script> --}}
+  <script src="{{asset('frontend/adminthemes/js/tiny-scrollbar.js')}}"></script>
   <!-- custom Js -->
-  <!--<script src="{{asset('frontend/adminthemes/js/custom-index.js')}}"></script>-->
+  <script src="{{asset('frontend/adminthemes/js/custom-index.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/custom.js')}}"></script>
 </head>
 <body>

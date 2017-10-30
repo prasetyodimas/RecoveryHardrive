@@ -12,23 +12,34 @@
 */
 Route::group(['prefix'=>'baseadmin'],function(){
 	Route::get('/','LoginAdminController@redirectLogin');
-	Route::post('/','LoginAdminController@postAdminLogin');
+	Route::post('/','LoginAdminController@postAndCheckStatusUser');
 	Route::get('/logout','LoginAdminController@getSignOut');
 	Route::get('/dashboard','HomeAdminController@homeAdmin');
 
+	//Data Master
 	Route::group(['prefix' => 'data-master'],function(){
 		Route::get('/','DataMasterController@dataMaster');
 	});
+
+	//Transaksi
 	Route::group(['prefix' => 'transaksi'], function(){
 		Route::get('/','TransaksiController@dataTransaksi');
 	});
+
+	//Laporan
 	Route::group(['prefix' => 'laporan'], function(){
 		Route::get('/','LaporanController@dataLaporan');
 	});
+
+	//Pusat Bantuan
 	Route::group(['prefix' => 'pusat-bantuan'], function(){
 		Route::get('/','PusatBantuanController@pusatBantuan');
 	});
+
+	//Setting User
 	Route::group(['prefix' => 'setting-user'], function(){
 		Route::get('/','SettingUserController@settingUser');
+		Route::get('edit/{id}','SettingUserController@editUser');
+		Route::get('hapus/{id}','SettingUserController@deleteUser');
 	});	
 });

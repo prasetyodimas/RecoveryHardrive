@@ -15,39 +15,38 @@
 		<div class="modal-body">
 			<div class="row-fluid">
 				<div class="span12">
-				  	<form class="form-horizontal  no-margin">
+				  	<form class="form-horizontal  no-margin" method="post">
 				        <div class="control-group">
-				            <label class="control-label" for="inputName">Nama User</label>
+				            <label class="control-label">Nama User</label>
 				              <div class="controls">
-				                <input type="text" id="inputName" placeholder="Name">
+				                <input type="text" name="nama-user" id="inputName" required="">
 				              </div>
 				            </div>
 				            <div class="control-group">
-				              	<label class="control-label" for="inputEmail">Responses</label>
-								<div class="controls">
-									<label class="radio inline">
-										<input type="radio" id="inlineradio1" value="option1" name="optionsRadios" checked> Option 1
-									</label>
-										<label class="radio inline">
-										<input type="radio" id="inlineradio2" value="option2" name="optionsRadios"> Option 2
-									</label>
-									<label class="radio inline">
-										<input type="radio" id="inlineradio3" value="option3" name="optionsRadios"> Option 3
-									</label>
-								</div>
+				            	<label class="control-label">Email</label>
+				            	<div class="controls">
+				            		<input type="text" name="email-user" required="">
+				            	</div>
 				            </div>
 				            <div class="control-group">
-								<div class="controls">
-									<input type="text" id="inputEmail" placeholder="Enter emails ...">
-								</div>
+				            	<label class="control-label">Password</label>
+				            	<div class="controls">
+				            		<input type="text" name="password" required="">
+				            	</div>
+				            </div>
+				            <div class="control-group">
+				            	<div class="controls">
+				            		<label class="control-label">Level Akses</label>
+				            		<option value="">Pilih</option>
+				            	</div>
 				            </div>
 			            </div>
 		            </form>
 		        </div>
 		    </div>
 		    <div class="modal-footer">
-				<button class="btn" data-dismiss="modal" aria-hidden="true"> Close </button> 
-				<button class="btn btn-primary"> Create </button> 
+				<button class="btn" data-dismiss="modal" aria-hidden="true"> Tutup </button> 
+				<button class="btn btn-primary"> Tambah </button> 
 			</div>
 	    </div>
 	</div>
@@ -71,20 +70,20 @@
 							<th>Action</th>
 						</tr>
 					</thead>
-						@foreach ($dataUser as $user) 
 					<tbody>
+						@foreach ($dataUser as $user) 
 						<tr>
 							<td>{{$user->id}}</td>
 							<td>{{$user->username}}</td>
 							<td>{{$user->email}}</td>
 							<td>{{$user->created_at}}</td>
 							<td>{{$user->updated_at}}</td>
-							<td><a href="{{url('baseadmin/edit/$user->id')}}">Edit</a>||
-								<a href="{{url('baseadmin/delete/$user->id')}}">Hapus
+							<td><a href="baseadmin/edit/{{$user->id}}">Edit</a> ||
+								<a href="baseadmin/delete/{{$user->id}}">Hapus
 							</td>
 						</tr>
+						@endforeach
 					</tbody>
-					@endforeach
 				</table>
 			</div>
 		</div>

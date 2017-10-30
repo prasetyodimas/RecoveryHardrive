@@ -3,18 +3,18 @@
 namespace App\Modules\Baseadmin\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 use App\Http\Requests;
-use App\Http\Controllers\Auth as AuthUser;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Auth as AuthUser;
 
 class LoginAdminController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * HomeAdmin Controller
+     * LoginAdmin Controller
      * @return \Illuminate\Http\Response
     */	
     
@@ -39,30 +39,37 @@ class LoginAdminController extends Controller
 	 * admin credentials in the users table. If match found,
 	 * redirect him/her to the admin dashboard, else, display
 	 * the error message.
-	 *
 	 */
-	public function postAdminLogin(Request $request)
+	public function postAndCheckStatusUser(Request $request)
 	{
 	    $this->validate($request, [
 	        'email'    => 'required|email',
 	        'password' => 'required'
 	    ]);
 
-	    $credentials = $request->only( 'email', 'password' );
-
+	    $credentials = $request->only('email', 'password');
 	    if(Auth::attempt($credentials))
 	    {
 	        return redirect('baseadmin/dashboard');
 	    }
 	    else
 	    {
-	        return 'Invalid Credentials';
+	        return redirect()->back()->with('message-failed','Whoops login failed !');
 	    }
 	}
-
-	public function getSignOut() {
-		Auth::logout();
-		return Redirect('baseadmin');
+	/**
+	 * Process the login form submitted to logout
+	 */
+	public function getSignOut() 
+	{
+		$AuthLogout = Auth::logout();
+		if ($AuthLogout) 
+		{
+			return redirect('baseadmin')->with('message-success','Successfully Logout !');
+		}else
+		{
+			return redirect('baseadmin')->with('message-failed','Failled Logout !');
+		}
 	}
 	
 }

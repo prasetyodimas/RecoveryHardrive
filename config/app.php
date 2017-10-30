@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
         Caffeinated\Modules\ModulesServiceProvider::class,
+        Weboap\Visitor\VisitorServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -229,6 +230,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Module' => Caffeinated\Modules\Facades\Module::class,
         'Theme' => App\Helpers\Theme::class,
+
         
     ],
 

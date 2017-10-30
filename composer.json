@@ -9,6 +9,7 @@
         "caffeinated/modules": "^4.2",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
+        "weboap/visitor": "^2.0",
         "yajra/laravel-datatables-oracle": "~6.0"
     },
     "require-dev": {

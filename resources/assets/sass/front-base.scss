@@ -1,0 +1,34 @@
+// BOOTSTRAPS
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+/*!
+  DIMAS RECOVERY
+  THEME BUILD BY BOOTSTRAP LANDING PAGE
+  LICENSE UNDER MIT
+  Develop And Custom Theme By Dimas Prasetyo (dimasprasetyo485@gmail.com)
+!*/
+//REBUILD DOCUMENTATION FRONTEND
+// ABSTRACTS
+// description here is a function, color, mixin.
+@import 'abstracts/color';
+@import 'abstracts/mixins';
+@import "abstracts/variables";
+
+// BASE
+// description here is a main style.
+@import 'base/core';
+
+// COMPONENT
+// description here is a button, navbar.
+@import 'component/button';
+@import 'component/navbar';
+
+// LAYOUTS
+// description here is a layout element style's
+@import 'layouts/responsive';
+
+// PAGES
+// description here is a every page element style's
+@import 'pages/banner';
+@import 'pages/part-custom';
+@import 'pages/stepy-wizard';
+@import 'pages/typography';
