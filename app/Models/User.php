@@ -18,7 +18,7 @@ class User extends Authenticatable
      */
     protected static $tablename = 'users';
     protected $fillable =[
-        'username', 'email', 'password',
+        'username', 'email', 'password'
     ];
 
     /**
@@ -30,18 +30,4 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    /*
-    * Method untuk yang mendefinisikan relasi antara model user dan model Role
-    */  
-    public function roles()
-    {
-        // return $this->belongsToMany('App\Role')->withTimestamps();
-    }
-
-    public function getDataUser()
-    {
-        $dataRaw = DB::table(self::$tablename)
-            ->select(DB::raw('username, email, created_at, updated_at'))->get();
-        return $dataRaw;
-    }
 }

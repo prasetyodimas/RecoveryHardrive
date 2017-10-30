@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 	<head>
-		@include('includes.head')
+        @include('includes.head')
+         <script>
+            window.myToken =  <?php echo json_encode([
+                'csrfToken' => csrf_token(),
+            ]); ?>
+            console.log(myToken.csrfToken)
+        </script>
 	</head>
 	<body>
 		<div class="navbar-navigation">
@@ -27,7 +33,7 @@
 		                </div>
 		            </div>
 		            <div class="col-lg-5 col-lg-offset-1 col-sm-6">
-		                <img class="img-responsive" src="{{asset('frontend/img/images/hardrive.png')}}" alt="">
+		                <img class="img-responsive" src="{{asset('frontend/fronthemes/asset-images/hardrive.png')}}" alt="">
 		            </div>
 		        </div>
 		    </div><!-- /.container -->
@@ -48,7 +54,7 @@
 		                </div>
 		            </div>
 		            <div class="col-lg-5 col-sm-pull-6 col-sm-6">
-		                <img class="img-responsive" src="{{asset('frontend/img/images/flashdisk.png')}}" alt="">
+		                <img class="img-responsive" src="{{asset('frontend/fronthemes/asset-images/flashdisk.png')}}" alt="">
 		            </div>
 		        </div>
 		    </div><!-- /.container -->
@@ -69,7 +75,7 @@
 		                </div>
 		            </div>
 		            <div class="col-lg-5 col-sm-6">
-		                <img class="img-responsive" src="{{asset('frontend/img/images/cd-drive.png')}}" alt="">
+		                <img class="img-responsive" src="{{asset('frontend/fronthemes/asset-images/cd-drive.png')}}" alt="">
 		            </div>
 		        </div>
 		    </div><!-- /.container -->
@@ -90,7 +96,7 @@
 		                </div>
 		            </div>
 		            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-		                <img class="img-responsive" src="{{asset('frontend/img/images/phones.png')}}" alt="">
+		                <img class="img-responsive" src="{{asset('frontend/fronthemes/asset-images/phones.png')}}" alt="">
 		            </div>
 		        </div>
 		    </div><!-- /.container -->
