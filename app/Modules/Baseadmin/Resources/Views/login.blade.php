@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link href="{{asset('frontend/img/favico/favicon-16.png')}}" rel="icon" type="image/png" sizes="16x16" >
+    <link href="{{asset('frontend/fronthemes/asset-images/favico/favicon-16.png')}}" rel="icon" type="image/png" sizes="16x16" >
     <!-- CSS -->
     <link href="{{asset('frontend/adminthemes/icomoon/style.css')}}" rel="stylesheet">
     <link href="{{asset('frontend/adminthemes/css/main.css')}}" rel="stylesheet">
@@ -22,9 +22,15 @@
           <div class="signin">
             <h1 class="center-align-text">Administrator Area</h1>
             @if (Session::has('message-failed'))
-              <div class="alert alert-danger">{{ Session::get('message-failed')}}</div>
+              <div class="alert alert-block alert-danger fade in">
+                <button type="button" data-dismiss="alert" class="close">x</button>
+                <h5 class="alert-heading">{{ Session::get('message-failed')}}</h4>
+              </div>
             @elseif(Session::has('message-success'))
-              <div class="alert alert-success">{{ Session::get('message-success')}}</div>
+              <div class="alert alert-block alert-success fade in">
+                <button type="button" data-dismiss="alert" class="close">x</button>
+                <h5 class="alert-heading">{{ Session::get('message-success')}}</h5>
+              </div>
             @endif
             <form action="{{url('baseadmin')}}" class="signin-wrapper" method="post">
               {{ csrf_field() }}
@@ -46,3 +52,11 @@
     </div>
   </body>
 </html>
+<script type="text/javascript">
+  $(document).ready(function(){
+    function timeOutMessages(){
+      setTimeout(function(){
+        $('.alert-block').fadeout();},2000);
+    }
+  });
+</script>

@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <input type="hidden" name="_token" value="{!! csrf_token() !!}">
+  <meta name="csrf-token" content="{{ csrf_token() }}" />
   <!-- FAVICON -->  
-  <link href="{{asset('frontend/fronthemes/asset-images/favico/favicon-16.png')}}" rel="shorcut icon">
+  <link href="{{asset('frontend/fronthemes/asset-images/favico/favicon-16.png')}}" rel="icon" type="image/png" sizes="16x16" >
   <link href="{{asset('frontend/adminthemes/icomoon/style.css')}}" rel="stylesheet">
   <!-- BOOTSTRAP.CSS -->
   <link href="{{asset('frontend/adminthemes/css/main.css')}}" rel="stylesheet">
@@ -18,7 +18,7 @@
   <script src="{{asset('frontend/adminthemes/js/jquery.min.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/bootstrap.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/jquery-ui-1.8.23.custom.min.js')}}"></script>
-  <!-- morris charts -->
+  <!-- MORRIS CHARTS -->
   <script src="{{asset('frontend/adminthemes/js/morris/morris.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/morris/raphael-min.js')}}"></script>
   <!-- Flot charts -->
@@ -28,7 +28,7 @@
   <script src="{{asset('frontend/adminthemes/js/fullcalendar.js')}}"></script>
   <!-- Tiny Scrollbar JS -->
   <script src="{{asset('frontend/adminthemes/js/tiny-scrollbar.js')}}"></script>
-  <!-- custom Js -->
+  <!-- CUSTOM JS -->
   <script src="{{asset('frontend/adminthemes/js/custom-index.js')}}"></script>
   <script src="{{asset('frontend/adminthemes/js/custom.js')}}"></script>
 </head>
@@ -36,7 +36,7 @@
   <!-- NAV MINI -->
   <header>
     <!-- MINI NAV -->
-    <a href="{{url('baseadmin')}}" class="logo">Admin Recovery Hardrive</a>
+    <a href="{{url('baseadmin/dashboard')}}" class="logo">Admin Recovery Hardrive</a>
     <div id="mini-nav">
       <ul class="hidden-phone">
         <li class="dropdown">
@@ -114,7 +114,7 @@
             <div class="icon">
               <span class="fs1" aria-hidden="true" data-icon="&#xe070;"></span>
             </div>
-            Setting User
+            Setting 
           </a>
         </li>
       </ul>
@@ -152,7 +152,9 @@
           <div class="span12">
             <ul class="breadcrumb-beauty">
               <li>
-                <a href="{{url('baseadmin')}}"><span class="fs1" aria-hidden="true" data-icon="&#xe002;"></span> Dashboard</a>
+                <a href="{{url('baseadmin')}}">
+                  <span class="fs1" aria-hidden="true" data-icon="&#xe002;"></span> Dashboard
+                </a>
               </li>
               <li></li> 
               @yield('navigation-content')

@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Modules\Baseadmin\Http\Controllers;
 
-use App\AppName;
 use Illuminate\Http\Request;
+
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
 class AppNameController extends Controller
 {
@@ -41,10 +43,10 @@ class AppNameController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\AppName  $appName
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(AppName $appName)
+    public function show($id)
     {
         //
     }
@@ -52,10 +54,10 @@ class AppNameController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\AppName  $appName
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(AppName $appName)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +66,10 @@ class AppNameController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\AppName  $appName
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AppName $appName)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +77,10 @@ class AppNameController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\AppName  $appName
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AppName $appName)
+    public function destroy($id)
     {
         //
     }
