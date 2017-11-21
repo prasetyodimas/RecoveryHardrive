@@ -125,7 +125,7 @@
         <div class="widget less-bottom-margin widget-border">
           <div class="widget-body">
             <div class="current-stats">
-              <h4 class="text-error">32980</h4>
+              <h4 class="text-error">0</h4>
               <p>Page Views</p>
               <div class="type">
                 <span class="fs1 arrow text-error" aria-hidden="true" data-icon="&#xe0c6;"></span> 

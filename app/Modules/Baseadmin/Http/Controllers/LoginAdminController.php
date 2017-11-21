@@ -18,7 +18,8 @@ class LoginAdminController extends Controller
      * @return \Illuminate\Http\Response
     */	
     
-    // use AuthenticatesUsers;
+    use AuthenticatesUsers;
+
     public function redirectLogin()
     {
     	return view('baseadmin::login');
@@ -63,13 +64,7 @@ class LoginAdminController extends Controller
 	public function getSignOut() 
 	{
 		$AuthLogout = Auth::logout();
-		if ($AuthLogout) 
-		{
-			return redirect('baseadmin')->with('message-success','Successfully Logout !');
-		}else
-		{
-			return redirect('baseadmin')->with('message-failed','Failled Logout !');
-		}
+		return redirect('baseadmin')->with('message-success','Successfully Logout !');
 	}
 	
 }

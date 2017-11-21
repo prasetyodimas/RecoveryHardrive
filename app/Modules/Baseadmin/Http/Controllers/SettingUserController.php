@@ -8,7 +8,6 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\User as userList;
 use DB;
-use Input;
 use Redirect;
 
 class SettingUserController extends Controller
@@ -21,32 +20,40 @@ class SettingUserController extends Controller
     public function settingUser()
     {
     	$dataUser = userList::get()->all();
-    	// return dd($dataUser);
     	return view('baseadmin::setting-user.index',compact('dataUser'));
     }
-
-    public function addUser()
+    public function addUser(request $request)
     {
-    	$dataUser = array(
-    		'username'  =>get::input('username'), 
-    		'email'		=>get::input('email'),
-    		'password'	=>get::input('password')
+        $input = $request->all();
+        $dataUser = new userList();
 
-    	);
-    	DB::table('users')->insert($dataUser);
-    	return Redirect::to('baseadmin/settinguser')->with('message','success add data !!');
+        $dataUser->username       = $input['nama_user'];
+        $dataUser->email          = $input['email_user'];
+        $dataUser->password       = md5($input['password_user']);
+        $dataUser->level          = $input['level_akses'];
+        $dataUser->remember_token = $input['remember_token'];
+        $dataUser->save($request->all());
+    	return Redirect::to('baseadmin/setting-user')->with('message-success','success add data !!');
     }
 
-    public function editUser($id)
+    public function editUser(request $request, $id)
     {
     	DB::table('users')->where('id','=','$id')->edit();
-    	return Redirect()->back()->with('message-succes','succes edit data !!');
+    	return Redirect()->back()->with('message-success','succes edit data !!');
     }
 
     public function deleteUser($id)
     {
-    	DB::table('users')->where('id','=','$id')->delete();
-    	return Redirect()->back()->with('message-succes','succes delete data !!');
+        $dataUser = userList::findOrFail($id);
+        if ($dataUser) {
+            if ($dataUser->delete()) {
+    	       return Redirect()->back()->with('message-success','succes delete data !!');
+            }else{
+               return Redirect()->back()->with('message-failed','failed delete data !!');
+            }
+        }else{
+            echo "Cannot find this data !!";
+        }
     }
 
 }
