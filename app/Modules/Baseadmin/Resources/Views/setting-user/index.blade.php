@@ -102,7 +102,7 @@
 							<td>{{$user->created_at}}</td>
 							<td>{{$user->updated_at}}</td>
 							<td>
-								<a href="{{url('baseadmin/setting-user/editUser/'.$user->id.'')}}"> Edit</a> ||
+								<a href="{{url('baseadmin/setting-user/showUser/'.$user->id.'')}}"> Edit</a> ||
 								<a href="{{url('baseadmin/setting-user/deleteUser/'.$user->id.'')}}"> Hapus</a>
 							</td>
 						</tr>

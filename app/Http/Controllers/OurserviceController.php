@@ -12,8 +12,6 @@ class OurserviceController extends Controller
      */
     public function ShowService()
     {
-        // $data = Members::getMember();
-        // return view('home',compact('data'));
         return view('pages/service-us');
     }
     /**

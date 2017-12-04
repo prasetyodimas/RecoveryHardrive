@@ -40,7 +40,8 @@ Route::group(['prefix'=>'baseadmin'],function(){
 	Route::group(['prefix' => 'setting-user'], function(){
 		Route::get('/','SettingUserController@settingUser');
 		Route::post('addUser','SettingUserController@addUser');
-		Route::get('editUser/{id}','SettingUserController@editUser');
+		Route::get('showUser/{id}','SettingUserController@showUserVal');
+		Route::post('editUser','SettingUserController@editUser');
 		Route::get('deleteUser/{id}','SettingUserController@deleteUser');
 	});	
 });
