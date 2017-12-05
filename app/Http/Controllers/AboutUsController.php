@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 
 class AboutUsController extends Controller
@@ -12,7 +13,7 @@ class AboutUsController extends Controller
      */
     public function ShowAboutUs()
     {
-        return view('pages/about-us');
+        return view('pages.about-us');
     }
     /**
      * Show the form for creating a new resource.

@@ -1,4 +1,4 @@
-{{-- @extends('layout.default')
+@extends('layout.default')
 @section('content')
 <h4>Service</h4>
 	<div class="container">
@@ -95,4 +95,4 @@
 		</div>
 	</div>
 </div>
-@endsection --}}
+@endsection

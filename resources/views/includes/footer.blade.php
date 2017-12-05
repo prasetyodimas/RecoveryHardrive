@@ -18,12 +18,15 @@
           <li><a href="#"> Frequently Ask Questions</a></li>
         </ul>
       </div>
-      <div class="col-md-3 col-sm-6 paddingtop-bottom">
-        <h6 class="heading7 text-uppercase">Posting Terakhir</h6>
-        <div class="post">
+      <div class="col-md-3 col-sm-6 paddingtop-bottom methods-payment">
+        <h6 class="heading7 text-uppercase">Metode Pembayaran</h6>
+        <div class="footer-ul">
+          <li><a href="">BNI 0278-797-508 A/n Dimas Prasetyo</a></li>
+          <li><a href="">BRI </a></li>
+          <li><a href="">BCA </a></li>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+      <div class="col-md-3 col-sm-6 paddingtop-bottom social-icons">
         <div class="fb-page" data-href="" data-tabs="timeline" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
           <div class="navigation-link-social">
               <blockquote cite=""><a class="" href="https://www.facebook.com/dimas.setyo.35728466" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></blockquote>
@@ -40,7 +43,7 @@
 <div class="copyright">
   <div class="container">
     <div class="col-md-6">
-      <p>© {{Theme::titleApps()}} - recoverysolution {{date('Y')}}</p>
+      <p>© {{date('Y')}} {{Theme::titleApps()}} - Recoverysolution </p>
     </div>
     <div class="col-md-6">
       <ul class="bottom_ul">

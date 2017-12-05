@@ -1,5 +1,3 @@
-// BOOTSTRAPS
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 /*!
   DIMAS RECOVERY
   THEME BUILD BY BOOTSTRAP LANDING PAGE
@@ -32,3 +30,10 @@
 @import 'pages/part-custom';
 @import 'pages/stepy-wizard';
 @import 'pages/typography';
+@import 'pages/about';
+@import 'pages/contact-us';
+
+
+// Vendor Bootstrap
+// description here is a vendor element style's
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 
 class OurContactController extends Controller
@@ -14,7 +15,7 @@ class OurContactController extends Controller
     {
         // $data = Members::getMember();
         // return view('home',compact('data'));
-        return view('pages/contact-us');
+        return view('pages.contact-us');
     }
     /**
      * Show the form for creating a new resource.

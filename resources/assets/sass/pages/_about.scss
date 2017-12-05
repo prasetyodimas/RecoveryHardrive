@@ -1,0 +1,22 @@
+/*--------------------------
+    	 ABOUT-US
+----------------------------*/
+.container-about-us{
+	margin-top: 2em;
+	.about-us-description{
+		&> p.lead{
+			font-size: 1.2em;
+			line-height: 1.4em;
+		}
+	}
+	.wrraper-about__brand{
+		&> img.brand-img__about{
+			position: absolute;
+			display: block;
+			top:3em;
+			bottom: 0;
+			left:0;
+			right: 0;
+		}
+	}
+}

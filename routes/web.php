@@ -34,3 +34,7 @@ Route::group(['prefix'=>'blog'],function(){
 	Route::get('','OurContactController@ShowContact');
 });
 
+//Faq 
+Route::group(['prefix'=>'faq'],function(){
+	Route::get('','FrequentlyAskedQuestionController@ShowFaq');
+});

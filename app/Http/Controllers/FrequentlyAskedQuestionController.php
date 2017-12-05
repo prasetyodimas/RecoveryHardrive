@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FaqController extends Controller
+class FrequentlyAskedQuestionController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function ShowFaq()
     {
-        //
+        return view('pages.faq');
     }
 
     /**

@@ -4,9 +4,8 @@
 <a  name="services"></a>
 <div class="content-section-a">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-7 col-sm-6">
-                <hr class="section-heading-spacer">
+        <div class="row container-about-us">
+            <div class="col-lg-7 col-sm-6 about-us-description">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">About Us</h2>
                 <p class="lead">
@@ -19,8 +18,8 @@
                     Apabila Anda sedang mengalami kehilangan data, jangan ragu-ragu, segeralah menghubungi kami. Kami tidak mengenakan biaya pemeriksaan, dan setiap biaya dan tindakan selalu kami konfirmasikan terlebih dahulu. Mengoperasikan atau "mencoba memperbaiki" media simpan yang mengalami kehilangan data dapat memperparah kerusakannya, atau bahkan membuat datanya tidak dapat diselamatkan lagi.
                 <a target="_blank" href=""></a></p>
             </div>
-            <div class="col-lg-4 col-lg-offset-1 col-sm-6">
-                <img class="img-responsive" src="{{asset('frontend/img/images/doctor-hardisk.jpg')}}" alt="">
+            <div class="wrraper-about__brand col-lg-4 col-lg-offset-1 col-sm-6">
+                <img class="img-responsive img-thumbnail brand-img__about" src="{{asset('frontend/fronthemes/asset-images/logo/about-ico.png')}}" alt="">
             </div>
         </div>
     </div><!-- /.container -->

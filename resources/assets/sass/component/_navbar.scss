@@ -2,10 +2,16 @@
      NAVBAR MAIN
 -----------------------------*/
 .navbar-default {
-    background-color: $secondary-color !important;
-    border-color:transparent;
   .navbar-brand{
     color: $blackdark;
+    & > img.img-circle{
+      position: relative;
+      top: -2px;
+      right: 5px;
+      bottom: 0;
+      display: inline-block !important;
+      box-shadow: 0px 0px 2px #7f7f7f;
+    }
   }
   .navbar-nav {
     li {
@@ -13,17 +19,17 @@
         text-transform: uppercase;
       }
       & a:hover {
-        color: $redvelvet;
+        color: $bluevelvet;
       }
     }
     .active > {
       a {
-          color:$redvelvet;
-          background-color:$secondary-color;
-          border-bottom: 2px solid $redvelvet;
+          color:$bluevelvet !important;
+          background-color:$secondary-color !important;
+          border-bottom: 2px solid $bluevelvet;
       }
       a:hover {
-        background-color: $redvelvet;
+        background-color: $bluevelvet;
         color: $secondary-color;
       }
     }

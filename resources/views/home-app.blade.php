@@ -2,12 +2,6 @@
 <html lang="{{ app()->getLocale() }}">
 	<head>
         @include('includes.head')
-         <script>
-            window.myToken =  <?php echo json_encode([
-                'csrfToken' => csrf_token(),
-            ]); ?>
-            console.log(myToken.csrfToken)
-        </script>
 	</head>
 	<body>
 		<div class="navbar-navigation">
@@ -29,7 +23,7 @@
 		                	Komputer & Laptop, Baik Kerusakan Secara Logikal ataupun Fisikal.
 		                </p>
 						<div class="nav-linked">
-		                	<a href="{{url('/baseadmin')}}" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                	<a href="{{url('/baseadmin')}}" class="btn btn-lg btn-default"><i class="fa fa-info-circle" aria-hidden="true"></i> Selengkapnya..</a>
 		                </div>
 		            </div>
 		            <div class="col-lg-5 col-lg-offset-1 col-sm-6">
@@ -50,7 +44,7 @@
 		                	Komputer & Laptop, Baik Kerusakan Secara Logikal ataupun Fisikal.
 		                </p>
 		                <div class="nav-linked">
-		                	<a href="{{url('')}}" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                	<a href="{{url('')}}" class="btn btn-lg btn-default"><i class="fa fa-info-circle" aria-hidden="true"></i> Selengkapnya..</a>
 		                </div>
 		            </div>
 		            <div class="col-lg-5 col-sm-pull-6 col-sm-6">
@@ -71,7 +65,7 @@
 		                	Komputer & Laptop, Baik Kerusakan Secara Logikal ataupun Fisikal.
 		                </p>
 						<div class="nav-linked">
-		                	<a href="{{url('')}}" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                	<a href="{{url('')}}" class="btn btn-lg btn-default"><i class="fa fa-info-circle" aria-hidden="true"></i> Selengkapnya..</a>
 		                </div>
 		            </div>
 		            <div class="col-lg-5 col-sm-6">
@@ -92,7 +86,7 @@
 		                	Komputer & Laptop, Baik Kerusakan Secara Logikal ataupun Fisikal.
 		                </p>
 		                <div class="nav-linked">
-		                	<a href="{{url('')}}" class="btn btn-lg btn-default">Selengkapnya..</a>
+		                	<a href="{{url('')}}" class="btn btn-lg btn-default"><i class="fa fa-info-circle" aria-hidden="true"></i> Selengkapnya..</a>
 		                </div>
 		            </div>
 		            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
@@ -102,7 +96,7 @@
 		    </div><!-- /.container -->
 		</div> <!-- /.content-section-b -->
 
-        {{-- <div class="content-section-a content-price-list">
+        <div class="content-section-a content-price-list">
             <div class="form-group">
                 <h2 class="text-center text-uppercase header-list-service">Paket Servis / Harga layanan</h2>
             </div>
@@ -114,7 +108,7 @@
                             <hr />
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
                             <br />
-                            <a href="{{url('')}}" class="btn btn-lg btn-block btn-default">Selengkapnya..</a>
+                            <a href="{{url('')}}" class="btn btn-lg btn-block btn-default"><i class="fa fa-info-circle" aria-hidden="true"></i> Selengkapnya..</a>
                         </div>
                     </div>
                 </div>
@@ -125,7 +119,7 @@
                             <hr />
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
                             <br />
-                            <a href="{{url('')}}" class="btn btn-lg btn-block btn-default">Selengkapnya..</a>
+                            <a href="{{url('')}}" class="btn btn-lg btn-block btn-default"><i class="fa fa-info-circle" aria-hidden="true"></i> Selengkapnya..</a>
                         </div>
                     </div>
                 </div>
@@ -136,12 +130,12 @@
                             <hr />
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra quam sollicitudin nibh aliquam finibus. Etiam efficitur felis vel imperdiet varius. Maecenas bibendum elementum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus finibus semper. Fusce molestie tincidunt leo vel varius. Nam scelerisque nulla feugiat leo consequat, id dignissim sem tincidunt. Proin elit mauris, hendrerit in varius sed, facilisis sit amet neque.</p>
                             <br />
-                            <a href="{{url('')}}" class="btn btn-lg btn-block btn-default">Selengkapnya..</a>
+                            <a href="{{url('')}}" class="btn btn-lg btn-block btn-default"><i class="fa fa-info-circle" aria-hidden="true"></i> Selengkapnya..</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
 
         <!-- Prosedur Layanan -->
         <section  class="section how-it-works" id="how-it-works">
@@ -154,33 +148,38 @@
                 <div class="row">
                     <div class="col-md-12 board">
                         <div class="board-inner">
-                            <ul class="nav nav-tabs" id="myTab">
+                            <ul class="nav nav-tabs nav-stepy" id="myTab">
                                 <div class="liner"></div>
-                                <li class="active">
+                                <li class="active stepy-li">
                                     <a href="#home" aria-controls="home" role="tab" data-toggle="tab" title="">
                                       <span class="round-tabs one">
                                           <i class="fa fa-check"></i>
                                       </span>
-                                    </a></li>
-                                <li><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" title="">
+                                    </a>
+                                </li>
+                                <li class="stepy-li">
+                                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" title="">
                                      <span class="round-tabs two">
                                          <i class="fa fa-check"></i>
                                      </span>
                                     </a>
                                 </li>
-                                <li><a href="#prototyping" aria-controls="prototyping" role="tab" data-toggle="tab" title="">
+                                <li class="stepy-li">
+                                    <a href="#prototyping" aria-controls="prototyping" role="tab" data-toggle="tab" title="">
                                      <span class="round-tabs three">
                                           <i class="fa fa-check"></i>
                                      </span>
                                     </a>
                                 </li>
-                                <li><a href="#uidesign" aria-controls="uidesign" role="tab" data-toggle="tab" title="">
+                                <li class="stepy-li">
+                                    <a href="#uidesign" aria-controls="uidesign" role="tab" data-toggle="tab" title="">
                                      <span class="round-tabs four">
                                           <i class="fa fa-check"></i>
                                      </span>
                                     </a>
                                 </li>
-                                <li><a href="#doner" aria-controls="doner" role="tab" data-toggle="tab" title="">
+                                <li class="stepy-li">
+                                    <a href="#doner" aria-controls="doner" role="tab" data-toggle="tab" title="">
                                      <span class="round-tabs five">
                                           <i class="fa fa-check"></i>
                                      </span>
@@ -196,7 +195,7 @@
                                     Pelanggan membawa atau mengirimkan media simpannya yang bermasalah. Data barang beserta nama, alamat, informasi kontak, dan keluhan pelanggan akan dicatat.
                                 </p>
                                 <p class="text-center">
-                                    <a href="" class="btn btn-success btn-outline-rounded green"> Kami Solusinya <i class="fa fa-handshake-o"></i></a>
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="profile">
@@ -206,7 +205,7 @@
                                     Setelah ongkos perbaikan disetujui pelanggan, media simpan akan mulai dikerjakan.
                                 </p>
                                 <p class="text-center">
-                                    <a href="" class="btn btn-success btn-outline-rounded green"> Kami Solusinya <i class="fa fa-handshake-o"></i></a>
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
                                 </p>
 
                             </div>
@@ -216,16 +215,16 @@
                                     Setelah media simpan selesai dikerjakan, pelanggan akan diberitahu daftar file yang dapat diselamatkan. Pelanggan juga dapat melihat langsung file-file yang diselamatkan di kantor kami atau melalui Internet.
                                 </p>
                                 <p class="text-center">
-                                    <a href="" class="btn btn-success btn-outline-rounded green"> Kami Solusinya <i class="fa fa-handshake-o"></i></a>
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="uidesign">
                                 <h3 class="head text-center">Kendala Dalam Proses Recovery</h3>
                                 <p class="narrow text-center">
-																	Jika Dalam Pengerjaan proses recovery yang sedang berlangsung terdapat kendala dalam penyelamatan data misalnya harus membeli spare part pendukung maka biaya recovery belum termasuk dengan biaya spare part tersebut.
+								    Jika Dalam Pengerjaan proses recovery yang sedang berlangsung terdapat kendala dalam penyelamatan data misalnya harus membeli spare part pendukung maka biaya recovery belum termasuk dengan biaya spare part tersebut.
                                 </p>
                                 <p class="text-center">
-                                    <a href="" class="btn btn-success btn-outline-rounded green"> Kami Solusinya <i class="fa fa-handshake-o"></i></a>
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang</a>
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="doner">
@@ -234,15 +233,15 @@
                                 </div>
                                 <h3 class="head text-center">Estimasi Pengerjaan</h3>
                                 <p class="narrow text-center">
-																  Untuk Estimasi Biaya Pengerjaan Recovery data harga menyesuaikan dengan kapasitas media simpan yang anda miliki.
+								    Untuk Estimasi Biaya Pengerjaan Recovery data harga menyesuaikan dengan kapasitas media simpan yang anda miliki.
                                 </p>
                                 <p class="text-center">
-                                    <a href="" class="btn btn-success btn-outline-rounded green"> Kami Solusinya <i class="fa fa-handshake-o"></i></a>
+                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang 
+                                    </a>
                                 </p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-
                     </div>
                 </div>
             </div>
