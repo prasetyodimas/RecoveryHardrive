@@ -12,7 +12,7 @@ const { mix } = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/frontend/fronthemes/js/app.js')
-   .js('resources/assets/js/bootstrap.js', 'public/frontend/fronthemes/js/app.js')
+   .js('resources/assets/js/global.js','public/frontend/fronthemes/js/app.js')
    .js('resources/assets/plugins/nicescroll/jquery.nicescroll.min.js', 'public/frontend/fronthemes/js/app.js')
    .sass('resources/assets/sass/front-base.scss', 'public/frontend/fronthemes/css/base.css')
    .sass('resources/assets/font-awesome/scss/font-awesome.scss', 'public/frontend/fronthemes/css/font-awesome.css')
@@ -22,4 +22,3 @@ mix.browserSync({
     proxy: 'http://localhost:8000'
 });
 
-// mix.disableNotifications();

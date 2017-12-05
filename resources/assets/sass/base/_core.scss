@@ -110,7 +110,7 @@ body, h1, h2, h3, h4, h5, h6 {
       padding: 0 20px 20px 20px;
       min-height: 340px;
       &:hover {
-        border: 2px solid $redvelvet;
+        border: 2px solid $bluevelvet;
       }
       span.box-title {
         color: $secondary-color;
@@ -223,7 +223,7 @@ footer {
 .heading7 {
   font-size: 21px;
   font-weight: 700;
-  color: #d9d6d6;
+  color: $secondary-color;
   margin-bottom: 22px;
 }
 
