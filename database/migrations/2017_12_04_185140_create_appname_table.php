@@ -15,11 +15,11 @@ class CreateAppnameTable extends Migration
     {
         Schema::create('appname', function (Blueprint $table) {
             $table->increments('id_app_name');
-            $table->string('app_name');
-            $table->string('app_description');
-            $table->string('app_location');
-            $table->string('app_email');
-            $table->string('app_phone');
+            $table->string('app_name',100);
+            $table->string('app_description',200);
+            $table->string('app_location',100);
+            $table->string('app_email',50);
+            $table->string('app_phone',20);
             $table->timestamps();
         });
     }

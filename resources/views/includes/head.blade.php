@@ -1,6 +1,6 @@
 <title>{{Theme::titleApps()}}</title>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta keyword="Jasa Recovery Hardisk, Jasa Recovery Data, Recovery Data Jogja, Recovery Terbaik Jogja, Recovery Hardisk Jogja dan Perbaikan Komputer, Terima Segala Macam Jenis Keluhan Komputer, Solusi Terpercaya Terjamin">
 <meta name="csrf-token" content="{{ csrf_token() }}">

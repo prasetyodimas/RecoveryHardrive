@@ -1,17 +1,31 @@
 @extends('layout.default')
+<style>
+    .google-maps {
+        position: relative;
+        padding-bottom: 15%;
+        height:400px;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border:0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
 @section('content')
 <h4>Contact</h4>
-
-<div class="row">
-    <div class="container content-section-a animated fadeIn">
+<div class="content-section-a">
+    <div class="container animated fadeIn">
       <h1 class="header-title section-heading"> Contact </h1>
-        <hr>
         <div class="col-sm-12" id="parent">
-            <div class="col-sm-6">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8275110027053!2d110.26323751477817!3d-7.808077194373366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af9db893af5e3%3A0xf2dc2f4bdc064da6!2sPerum+Griya+Kencana+Permai!5e0!3m2!1sid!2sid!4v1505547182711" width="550" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="col-sm-6 col-md-6 google-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8275110027053!2d110.26323751477817!3d-7.808077194373366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af9db893af5e3%3A0xf2dc2f4bdc064da6!2sPerum+Griya+Kencana+Permai!5e0!3m2!1sid!2sid!4v1505547182711" allowfullscreen></iframe>
             </div>
-            <div class="col-sm-6">
-                <form action="form.php" class="contact-form" method="post">
+            <div class="col-sm-6 col-md-6 col-sm-12">
+                <form action="{{url('home')}}" class="contact-form" method="post">
                     <div class="form-group">
                       <input type="text" class="form-control" id="name" name="nm" placeholder="Nama" required="" autofocus="">
                     </div>
@@ -80,7 +94,7 @@
                     <div class="space"></div>
                 </div>
             </div>
-          </div>
+       </div>
     </div>
 </div>
 @endsection
