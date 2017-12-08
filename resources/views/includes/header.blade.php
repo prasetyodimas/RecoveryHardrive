@@ -7,10 +7,12 @@
                 <div class="intro-message">
                     <h1>Jasa Recovery Data</h1>
                     <h3>We Care About Your Problems</h3>
-                    <button class="btn btn-lg btn-default">
+                    <div class="navigation_link_whatsappApi">
+                        <!--https://api.whatsapp.com/send?phone=6285803256647&text=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut%20:)%0AFormat%20Konsultasi%20%3A%20Nama%20Lengkap%20Keluhan%20/%20Riwayat-->
+                        <a class="btn btn-lg btn-default" href="http://bit.ly/2kDRRFu" target="_blank">
                         <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        <a href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" target="_blank">Konsultasi Sekarang</a>
-                    </button>
+                        Konsultasi Sekarang</a>
+                    </div>
                 </div>
             </div>
         </div>

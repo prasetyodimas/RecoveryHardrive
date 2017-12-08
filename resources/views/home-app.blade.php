@@ -195,7 +195,7 @@
                                     Pelanggan membawa atau mengirimkan media simpannya yang bermasalah. Data barang beserta nama, alamat, informasi kontak, dan keluhan pelanggan akan dicatat.
                                 </p>
                                 <p class="text-center">
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
+                                    <a target="_blank" href="http://bit.ly/2kDRRFu" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="profile">
@@ -205,7 +205,7 @@
                                     Setelah ongkos perbaikan disetujui pelanggan, media simpan akan mulai dikerjakan.
                                 </p>
                                 <p class="text-center">
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
+                                    <a target="_blank" href="http://bit.ly/2kDRRFu" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
                                 </p>
 
                             </div>
@@ -215,7 +215,7 @@
                                     Setelah media simpan selesai dikerjakan, pelanggan akan diberitahu daftar file yang dapat diselamatkan. Pelanggan juga dapat melihat langsung file-file yang diselamatkan di kantor kami atau melalui Internet.
                                 </p>
                                 <p class="text-center">
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
+                                    <a target="_blank" href="http://bit.ly/2kDRRFu" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang </a>
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="uidesign">
@@ -224,7 +224,7 @@
 								    Jika Dalam Pengerjaan proses recovery yang sedang berlangsung terdapat kendala dalam penyelamatan data misalnya harus membeli spare part pendukung maka biaya recovery belum termasuk dengan biaya spare part tersebut.
                                 </p>
                                 <p class="text-center">
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang</a>
+                                    <a target="_blank" href="http://bit.ly/2kDRRFu" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang</a>
                                 </p>
                             </div>
                             <div class="tab-pane fade" id="doner">
@@ -236,7 +236,7 @@
 								    Untuk Estimasi Biaya Pengerjaan Recovery data harga menyesuaikan dengan kapasitas media simpan yang anda miliki.
                                 </p>
                                 <p class="text-center">
-                                    <a target="_blank" href="https://api.whatsapp.com/send?phone=6285803256647&teks=Hallo%20DimasRecovery%20Saya%20ingin%20Konsultasi%20Lebih%20Lanjut" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang 
+                                    <a target="_blank" href="http://bit.ly/2kDRRFu" class="btn btn-lg btn-default"><i class="fa fa-whatsapp" aria-hidden="true"></i> Kami Solusinya Chat Konsultasi Sekarang 
                                     </a>
                                 </p>
                             </div>

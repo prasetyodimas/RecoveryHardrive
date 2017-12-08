@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableDetailLayanan extends Migration
+class CreateTableCodeGroup extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateTableDetailLayanan extends Migration
      */
     public function up()
     {
-        Schema::create('detail_layanan', function (Blueprint $table) {
-            $table->increments('id_detail_layanan');
+        Schema::create('code_group', function (Blueprint $table) {
+            $table->increments('code_id');
+            $table->string('code_group',100);
+            $table->string('code_name',100);
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateTableDetailLayanan extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('detail_layanan');
+        Schema::dropIfExists('code_group');
     }
 }

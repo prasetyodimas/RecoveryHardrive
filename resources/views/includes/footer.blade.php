@@ -23,7 +23,6 @@
         <div class="footer-ul">
           <li><a href="">BNI 0278-797-508 A/n Dimas Prasetyo</a></li>
           <li><a href="">BRI </a></li>
-          <li><a href="">BCA </a></li>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 paddingtop-bottom social-icons">
