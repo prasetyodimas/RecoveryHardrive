@@ -16,7 +16,7 @@
 		    <div class="container">
 		        <div class="row">
 		            <div class="col-lg-6 col-sm-6">
-		                <hr class="section-heading-spacer">
+		                
 		                <div class="clearfix"></div>
 		                <h2 class="section-heading">Recovery Hardisk</h2>
 		                <p class="lead">Kami Melayani Jasa Recovery Data / Backup Data mulai dari PC /
@@ -37,7 +37,6 @@
 		    <div class="container">
 		        <div class="row">
 		            <div class="col-lg-6 col-sm-push-6  col-sm-6">
-		                <hr class="section-heading-spacer">
 		                <div class="clearfix"></div>
 		                <h2 class="section-heading">Recovery Flash Disk</h2>
 		                <p class="lead">Kami Melayani Jasa Recovery Data / Backup Data mulai dari PC /
@@ -58,7 +57,6 @@
 		    <div class="container">
 		        <div class="row">
 		            <div class="col-lg-6 col-sm-6">
-		                <hr class="section-heading-spacer">
 		                <div class="clearfix"></div>
 		                <h2 class="section-heading">Recovery CD / DVD </h2>
 		                <p class="lead">Kami Melayani Jasa Recovery Data / Backup Data mulai dari PC /
@@ -79,7 +77,6 @@
 		    <div class="container">
 		        <div class="row">
 		            <div class="col-lg-6 col-sm-push-6  col-sm-6">
-		                <hr class="section-heading-spacer">
 		                <div class="clearfix"></div>
 		                <h2 class="section-heading">Recovery Handphone</h2>
 		                <p class="lead">Kami Melayani Jasa Recovery Data / Backup Data mulai dari PC /
