@@ -2,12 +2,21 @@
 
 @section('navigation-content')
   <li><a href="{{url('baseadmin/setting-user')}}">Setting User</a></li>
-  <li><a href="{{url('baseadmin/setting-user')}}">Setting Aplication Name</a></li>
-  <li><a href="{{url('baseadmin/setting-user')}}"></a></li>
 @endsection
 
 @section('content')
 <div class="modal-body">
+	@if (Session::has('message-failed'))
+	  <div class="alert alert-block alert-danger fade in">
+		<button type="button" data-dismiss="alert" class="close">x</button>
+		<h5 class="alert-heading">{{ Session::get('message-failed')}}</h4>
+	  </div>
+    @elseif(Session::has('message-success'))
+      <div class="alert alert-block alert-success fade in">
+        <button type="button" data-dismiss="alert" class="close">x</button>
+        <h5 class="alert-heading">{{ Session::get('message-success')}}</h5>
+      </div>
+    @endif
   	<form class="form-horizontal  no-margin" method="post" action="{{url('baseadmin/setting-user/editUser')}}">
 	{{csrf_field()}}
 	<div class="row-fluid">
@@ -26,7 +35,13 @@
 	            	</div>
 	            </div>
 	            <div class="control-group">
-	            	<label class="control-label">Password</label>
+	            	<label class="control-label">Old Password</label>
+	            	<div class="controls">
+	            		<input type="text" name="old_password" value="{{$getuser->password}}" required="" readonly>
+	            	</div>
+	            </div>
+	            <div class="control-group">
+	            	<label class="control-label">New Password</label>
 	            	<div class="controls">
 	            		<input type="text" name="password_user" required="">
 	            	</div>
@@ -46,7 +61,7 @@
     </div>
     <div class="modal-footer">
 		<button class="btn" data-dismiss="modal" aria-hidden="true"> Save </button> 
-		<button class="btn btn-primary"> Cancel </button> 
+		<button class="btn btn-primary" value="reset" onclick="javascript:history.back();"> Cancel </button> 
 	</div>
 	</form>
 </div>

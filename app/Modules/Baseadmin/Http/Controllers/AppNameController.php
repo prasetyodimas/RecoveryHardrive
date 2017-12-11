@@ -3,9 +3,12 @@
 namespace App\Modules\Baseadmin\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Eloquent\Model;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Models\AppName as AplicationNames;
 
 class AppNameController extends Controller
 {
@@ -13,17 +16,18 @@ class AppNameController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     */
-    public function index()
+    */
+    public function ShowApp()
     {
-        //
+        $dataAppName = AplicationNames::get();
+        return view('baseadmin::setting-app.index',compact('dataAppName',$dataAppName));
     }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
-     */
+    */
     public function create()
     {
         //
@@ -34,7 +38,7 @@ class AppNameController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
-     */
+    */
     public function store(Request $request)
     {
         //
@@ -45,7 +49,7 @@ class AppNameController extends Controller
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
-     */
+    */
     public function show($id)
     {
         //

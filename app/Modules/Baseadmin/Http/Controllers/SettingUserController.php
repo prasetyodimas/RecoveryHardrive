@@ -3,11 +3,12 @@
 namespace App\Modules\Baseadmin\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Facades\Support\DB;
+use Illuminate\Hashing\BcryptHasher;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Models\User as userList;
-use DB;
 use Validator;
 use Redirect;
 
@@ -33,7 +34,7 @@ class SettingUserController extends Controller
 
         $dataUser->username       = $input['nama_user'];
         $dataUser->email          = $input['email_user'];
-        $dataUser->password       = md5($input['password_user']);
+        $dataUser->password       = bcrypt($input['password_user']);
         $dataUser->level          = $input['level_akses'];
         $dataUser->remember_token = $input['remember_token'];
         $dataUser->save($request->all());
@@ -58,7 +59,7 @@ class SettingUserController extends Controller
         $dataUser->password       = md5($update['password_user']);
         $dataUser->level          = $update['level_akses'];
         $dataUser->remember_token = $update['remember_token'];
-    	$user = userList::where($request)->$update;
+    	$user = userList::where($update);
     	return Redirect()->back()->with('message-success','succes edit data !!');
     }
 

@@ -12,21 +12,18 @@
 				<div class="title">Pusat Bantuan</div>
 			</div>
 			<div class="widget-body">
-				<table class="table table-condensed table-striped table-bordered table-hover no-margin">
+				<table id="" class="table table-condensed table-striped table-bordered table-hover no-margin">
 					<thead>
 						<tr>
 							<th>No</th>
-							<th>Nama</th>
-							<th>Alamat</th>
+							<th>Pertanyaan</th>
+							<th>Jawaban</th>
 							<th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
+							
 						</tr>
 					</tbody>
 				</table>
