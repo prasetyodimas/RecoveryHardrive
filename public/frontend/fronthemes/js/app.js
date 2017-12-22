@@ -11048,6 +11048,12 @@ __webpack_require__(32);
 
 window.Vue = __webpack_require__(35);
 
+window.onload = function () {
+  var app = new Vue({
+    el: '#app'
+  });
+};
+
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the

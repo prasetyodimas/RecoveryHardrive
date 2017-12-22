@@ -10,6 +10,7 @@
 		<div class="header-main">
 	   	 	@include('includes.header')
 	    </div>
+        <div id="#app">
 	    <!-- Page Content -->
 		<a  name="services"></a>
 		<div class="content-section-a">
@@ -241,6 +242,7 @@
                         </div>
                     </div>
                 </div>
+                </div><!-- vue -->
             </div>
         </section>
 		<!-- Footer -->
