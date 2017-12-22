@@ -19,8 +19,8 @@ require('bootstrap-sass');
 window.Vue = require('vue');
 
 window.onload = function(){
-	var app = new Vue({
-		el: '#app'
+	const app = new Vue({
+		el: '#app',
 	}); 
 }
 

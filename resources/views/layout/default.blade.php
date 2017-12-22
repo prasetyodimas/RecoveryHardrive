@@ -10,7 +10,7 @@
 		</div>
 		<!-- content-->
 	   	<div class="content-apps">
-			<div id="#app">
+			<div id="app" v-component="{{currentActivity}}">
 	    		@yield('content')
 			</div>	
 	    </div>
