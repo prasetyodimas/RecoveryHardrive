@@ -52,7 +52,8 @@ class AppNameController extends Controller
     */
     public function show($id)
     {
-        //
+        $getDataAppName = AplicationNames::get();
+        
     }
 
     /**

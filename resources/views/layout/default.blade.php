@@ -9,12 +9,14 @@
 			@include('layout.navbartop')
 		</div>
 		<!-- content-->
-   	<div class="content-apps">
-    	@yield('content')
-    </div>
-	  <!-- Footer -->
-    <footer>
-        @include('includes.footer')
-    </footer>
+	   	<div class="content-apps">
+			<div id="app">
+	    		@yield('content')
+			</div>	
+	    </div>
+		  <!-- Footer -->
+	    <footer>
+	        @include('includes.footer')
+	    </footer>
   </body>
 </html>

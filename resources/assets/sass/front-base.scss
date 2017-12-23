@@ -4,11 +4,14 @@
   LICENSE UNDER MIT
   Develop And Custom Theme By Dimas Prasetyo (dimasprasetyo485@gmail.com)
 !*/
-//REBUILD DOCUMENTATION FRONTEND
+//LIBRARY BOURBON https://bourbon.io library sass 
+@import 'bourbon/bourbon';
+
 // ABSTRACTS
 // description here is a function, color, mixin.
 @import 'abstracts/color';
 @import 'abstracts/mixins';
+@import 'abstracts/mixins_rev';
 @import "abstracts/variables";
 
 // FUNCTION
@@ -35,7 +38,7 @@
 @import 'pages/typography';
 @import 'pages/about';
 @import 'pages/contact-us';
-
+@import 'pages/faq';
 
 // Vendor Bootstrap
 // description here is a vendor element style's

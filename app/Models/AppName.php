@@ -16,6 +16,7 @@ class AppName extends Model
     
     protected $table = 'appname'; 
     protected $fillable  = ['app_name', 'app_description', 'app_location','app_email','app_phone'];
+    public $timestamps = true;
 
     public static function getAppName()
     {
