@@ -7,16 +7,16 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class PusatBantuanController extends Controller
+class TransaksiController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function pusatBantuan()
+    public function dataTransaksi()
     {
-      return view('baseadmin::pusat-bantuan.index');
+        return view('baseadmin::transaksi.index');
     }
 
     /**

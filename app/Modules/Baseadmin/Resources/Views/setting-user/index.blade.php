@@ -2,8 +2,6 @@
 
 @section('navigation-content')
   <li><a href="{{url('baseadmin/setting-user')}}">Setting User</a></li>
-  <li><a href="{{url('baseadmin/setting-user')}}">Setting Aplication Name</a></li>
-  <li><a href="{{url('baseadmin/setting-user')}}"></a></li>
 @endsection
 
 @section('content')
@@ -77,7 +75,7 @@
 	        @endif
 			<div class="widget-body">
 				<div class="widget-body">
-  					<a href="#createFilter" role="button" class="btn btn-warning2" data-toggle="modal"> Tambah User </a>
+  					<a href="#createFilter" role="button" class="btn btn-warning2" data-toggle="modal"><span class="icon-plus" aria-hidden="true"></span> Tambah User </a>
 				</div>
 				<table class="table table-condensed table-striped table-bordered table-hover no-margin">
 					<thead>
@@ -102,8 +100,8 @@
 							<td>{{$user->created_at}}</td>
 							<td>{{$user->updated_at}}</td>
 							<td>
-								<a href="{{url('baseadmin/setting-user/showUser/'.$user->id.'')}}"> Edit</a> ||
-								<a href="{{url('baseadmin/setting-user/deleteUser/'.$user->id.'')}}"> Hapus</a>
+								<a href="{{url('baseadmin/setting-user/showUser/'.$user->id.'')}}"><span class="" area-hidden="true" data-icon="&#xe15a;"></i> Edit</a> ||
+								<a href="{{url('baseadmin/setting-user/deleteUser/'.$user->id.'')}}"><span class="" area-hidden="true" data-icon="&#xe0fa;"></i> Hapus</a>
 							</td>
 						</tr>
 						<?php $no++;?>

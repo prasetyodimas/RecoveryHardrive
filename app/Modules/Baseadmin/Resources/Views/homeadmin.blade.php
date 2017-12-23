@@ -36,7 +36,7 @@
   <!-- NAV MINI -->
   <header>
     <!-- MINI NAV -->
-    <a href="{{url('baseadmin/dashboard')}}" class="logo">Admin Recovery Hardrive</a>
+    <a href="{{url('baseadmin/dashboard')}}" class="logo">Administrator Of {{Theme::titleApps()}}</a>
     <div id="mini-nav">
       <ul class="hidden-phone">
         <li class="dropdown">
@@ -114,7 +114,15 @@
             <div class="icon">
               <span class="fs1" aria-hidden="true" data-icon="&#xe070;"></span>
             </div>
-            Setting 
+            Setting User
+          </a>
+        </li>
+        <li class="{{Request::segment(2)=="setting-app" ? 'active':''}}">
+          <a href="{{url('baseadmin/setting-app')}}">
+            <div class="icon">
+              <span class="fs1" aria-hidden="true" data-icon="&#xe070;"></span>
+            </div>
+            Setting AppName
           </a>
         </li>
       </ul>
