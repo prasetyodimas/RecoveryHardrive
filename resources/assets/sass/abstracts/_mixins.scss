@@ -44,14 +44,6 @@
   box-shadow: $left $top $radius $color;
 }
 
-// TRANSITION
-@mixin transition($property, $duration, $easing: linear) {
-	-webkit-transition: $property $duration $easing;
-  -moz-transition: $property $duration $easing;
-	-o-transition: $property $duration $easing;
-  transition: $property $duration $easing;
-}
-
 // MIXIN RETINA IMAGES
 @mixin image-2x($image, $width, $height) {
   @media (min--moz-device-pixel-ratio: 1.3),
@@ -151,13 +143,4 @@
       color: $active;
     }
   }
-}
-
-// MIXIN TRANSITION
-@mixin transition($args) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
 }
